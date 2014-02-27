@@ -360,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				A1DFF04D18BEEAEE00C3EE6B /* iCareer */,
+				A1DFF08218BF193700C3EE6B /* Utils */,
 				A1DFF06618BEEAEE00C3EE6B /* iCareerTests */,
 				140C82EA18BF0AF600BF65AB /* ThirdPartLibrary */,
 				140C835618BF226E00BF65AB /* Utility */,
@@ -438,6 +439,13 @@
 				A1DFF06918BEEAEE00C3EE6B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1DFF08218BF193700C3EE6B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
