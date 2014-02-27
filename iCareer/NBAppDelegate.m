@@ -3,7 +3,7 @@
 //  iCareer
 //
 //  Created by andy on 14-2-27.
-//  Copyright (c) 2014年 andy. All rights reserved.
+//  Copyright (c) 2014年 LJLD Tech. All rights reserved.
 //
 
 #import "NBAppDelegate.h"
@@ -12,9 +12,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.mainVC = [[NBMainViewController alloc] initWithNibName:@"NBMainViewController" bundle:nil];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHexString:@"#abcdef"]];
+    self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
     //This is create by YANGReal
     return YES;
