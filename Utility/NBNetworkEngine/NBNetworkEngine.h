@@ -15,6 +15,7 @@ typedef void(^CompleteHander)(id jsonObject,BOOL success);
 
 + (void)loadDataWithURL:(NSString *)url params:(NSDictionary *)params completeHander:(CompleteHander)callBack;
 
++ (void)loadDataWithURL:(NSString *)url completeHander:(CompleteHander)callBack;
 
 +(void)uploadImageWithURL:(NSString *)url params:(NSDictionary *)params data:(NSData *)data completeHander:(CompleteHander)callBack;
 

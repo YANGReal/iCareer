@@ -28,7 +28,9 @@
             callBack(nil,NO);
             
         }];
+        return;
     }
+  
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager POST:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
@@ -40,6 +42,12 @@
     }];
 }
 
+
+
++ (void)loadDataWithURL:(NSString *)url completeHander:(CompleteHander)callBack
+{
+    [NBNetworkEngine loadDataWithURL:url params:nil completeHander:callBack];
+}
 
 +(void)uploadImageWithURL:(NSString *)url params:(NSDictionary *)params data:(NSData *)data completeHander:(CompleteHander)callBack
 {
