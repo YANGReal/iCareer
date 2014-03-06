@@ -10,6 +10,7 @@
 #define iCareer_Global_h
 
 #pragma mark --导入头文件
+#import "AppUtility.h"
 #import "AFNetworking.h"
 #import "UIKit+AFNetworking.h"
 #import "NSDictionary+JSON.h"
@@ -20,6 +21,7 @@
 #import "UIView+Joggle.h"
 #import "UIView+ModifyFrame.h"
 #import "NBNetworkEngine.h"
+#import "DBTileButton.h"
 #pragma mark --定义常用宏
 
 /*********************

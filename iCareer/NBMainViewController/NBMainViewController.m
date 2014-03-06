@@ -9,7 +9,7 @@
 #import "NBMainViewController.h"
 
 @interface NBMainViewController ()
-
+@property (weak , nonatomic) IBOutlet DBTileButton *button;
 @end
 
 @implementation NBMainViewController
@@ -28,6 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from itsnib.
+    DLog(@"max = %f",CGFLOAT_MAX);
 }
 
 - (void)didReceiveMemoryWarning

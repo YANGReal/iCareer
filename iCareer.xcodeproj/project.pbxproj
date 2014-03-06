@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14088A4618C842200098A404 /* DBTileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14088A4518C842200098A404 /* DBTileButton.m */; };
+		14088A4918C8434B0098A404 /* AppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 14088A4818C8434B0098A404 /* AppUtility.m */; };
+		14088A4C18C844D30098A404 /* NBMainViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14088A4B18C844D30098A404 /* NBMainViewController_iPhone5.xib */; };
 		140C82E718BF093C00BF65AB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140C82E618BF093C00BF65AB /* CoreFoundation.framework */; };
 		140C82E918BF094B00BF65AB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 140C82E818BF094B00BF65AB /* libicucore.dylib */; };
 		140C82FD18BF0B1A00BF65AB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C82ED18BF0B1A00BF65AB /* AFNetworkActivityIndicatorManager.m */; };
@@ -38,7 +41,7 @@
 		140C837718BF226E00BF65AB /* UIView+ModifyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C836F18BF226E00BF65AB /* UIView+ModifyFrame.m */; };
 		140C837E18BF241200BF65AB /* NBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C837D18BF241200BF65AB /* NBBaseViewController.m */; };
 		140C838818BF25AB00BF65AB /* NBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C838618BF25AB00BF65AB /* NBMainViewController.m */; };
-		140C838918BF25AB00BF65AB /* NBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140C838718BF25AB00BF65AB /* NBMainViewController.xib */; };
+		140C838918BF25AB00BF65AB /* NBMainViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */; };
 		A1DFF04818BEEAEE00C3EE6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04718BEEAEE00C3EE6B /* Foundation.framework */; };
 		A1DFF04A18BEEAEE00C3EE6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04918BEEAEE00C3EE6B /* CoreGraphics.framework */; };
 		A1DFF04C18BEEAEE00C3EE6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04B18BEEAEE00C3EE6B /* UIKit.framework */; };
@@ -70,6 +73,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14088A4418C842200098A404 /* DBTileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTileButton.h; sourceTree = "<group>"; };
+		14088A4518C842200098A404 /* DBTileButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTileButton.m; sourceTree = "<group>"; };
+		14088A4718C8434B0098A404 /* AppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppUtility.h; path = AppUtility/AppUtility.h; sourceTree = "<group>"; };
+		14088A4818C8434B0098A404 /* AppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppUtility.m; path = AppUtility/AppUtility.m; sourceTree = "<group>"; };
+		14088A4B18C844D30098A404 /* NBMainViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NBMainViewController_iPhone5.xib; sourceTree = "<group>"; };
 		140C82E618BF093C00BF65AB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		140C82E818BF094B00BF65AB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		140C82EC18BF0B1A00BF65AB /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
@@ -131,7 +139,7 @@
 		140C837D18BF241200BF65AB /* NBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBBaseViewController.m; sourceTree = "<group>"; };
 		140C838518BF25AB00BF65AB /* NBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMainViewController.h; sourceTree = "<group>"; };
 		140C838618BF25AB00BF65AB /* NBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMainViewController.m; sourceTree = "<group>"; };
-		140C838718BF25AB00BF65AB /* NBMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NBMainViewController.xib; sourceTree = "<group>"; };
+		140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NBMainViewController_iPhone4.xib; sourceTree = "<group>"; };
 		A1DFF04418BEEAEE00C3EE6B /* iCareer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCareer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DFF04718BEEAEE00C3EE6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1DFF04918BEEAEE00C3EE6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -190,11 +198,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14088A4318C842200098A404 /* DBTileButton */ = {
+			isa = PBXGroup;
+			children = (
+				14088A4418C842200098A404 /* DBTileButton.h */,
+				14088A4518C842200098A404 /* DBTileButton.m */,
+			);
+			path = DBTileButton;
+			sourceTree = "<group>";
+		};
+		14088A4A18C843500098A404 /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				14088A4718C8434B0098A404 /* AppUtility.h */,
+				14088A4818C8434B0098A404 /* AppUtility.m */,
+			);
+			name = AppUtility;
+			sourceTree = "<group>";
+		};
 		140C82EA18BF0AF600BF65AB /* ThirdPartLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				140C830518BF0B2100BF65AB /* AFNetworking */,
 				140C82EB18BF0B1A00BF65AB /* UIKit+AFNetworking */,
+				14088A4318C842200098A404 /* DBTileButton */,
 			);
 			name = ThirdPartLibrary;
 			sourceTree = "<group>";
@@ -253,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				140C835718BF226E00BF65AB /* Global.h */,
+				14088A4A18C843500098A404 /* AppUtility */,
 				140C835818BF226E00BF65AB /* NBNetworkEngine */,
 				140C835B18BF226E00BF65AB /* NSDictionary+JSON */,
 				140C835E18BF226E00BF65AB /* RegexKitLite */,
@@ -351,7 +379,8 @@
 			children = (
 				140C838518BF25AB00BF65AB /* NBMainViewController.h */,
 				140C838618BF25AB00BF65AB /* NBMainViewController.m */,
-				140C838718BF25AB00BF65AB /* NBMainViewController.xib */,
+				140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */,
+				14088A4B18C844D30098A404 /* NBMainViewController_iPhone5.xib */,
 			);
 			path = NBMainViewController;
 			sourceTree = "<group>";
@@ -360,7 +389,6 @@
 			isa = PBXGroup;
 			children = (
 				A1DFF04D18BEEAEE00C3EE6B /* iCareer */,
-				A1DFF08218BF193700C3EE6B /* Utils */,
 				A1DFF06618BEEAEE00C3EE6B /* iCareerTests */,
 				140C82EA18BF0AF600BF65AB /* ThirdPartLibrary */,
 				140C835618BF226E00BF65AB /* Utility */,
@@ -441,13 +469,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A1DFF08218BF193700C3EE6B /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -524,7 +545,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140C838918BF25AB00BF65AB /* NBMainViewController.xib in Resources */,
+				14088A4C18C844D30098A404 /* NBMainViewController_iPhone5.xib in Resources */,
+				140C838918BF25AB00BF65AB /* NBMainViewController_iPhone4.xib in Resources */,
 				A1DFF05218BEEAEE00C3EE6B /* InfoPlist.strings in Resources */,
 				A1DFF05A18BEEAEE00C3EE6B /* Images.xcassets in Resources */,
 			);
@@ -550,10 +572,12 @@
 				140C831D18BF0B2100BF65AB /* AFSecurityPolicy.m in Sources */,
 				A1DFF05818BEEAEE00C3EE6B /* NBAppDelegate.m in Sources */,
 				140C831A18BF0B2100BF65AB /* AFHTTPRequestOperationManager.m in Sources */,
+				14088A4618C842200098A404 /* DBTileButton.m in Sources */,
 				140C830418BF0B1A00BF65AB /* UIWebView+AFNetworking.m in Sources */,
 				A1DFF05418BEEAEE00C3EE6B /* main.m in Sources */,
 				140C830018BF0B1A00BF65AB /* UIButton+AFNetworking.m in Sources */,
 				140C82FE18BF0B1A00BF65AB /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				14088A4918C8434B0098A404 /* AppUtility.m in Sources */,
 				140C830318BF0B1A00BF65AB /* UIRefreshControl+AFNetworking.m in Sources */,
 				140C832118BF0B2100BF65AB /* AFURLSessionManager.m in Sources */,
 				140C837E18BF241200BF65AB /* NBBaseViewController.m in Sources */,
