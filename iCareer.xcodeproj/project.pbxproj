@@ -517,6 +517,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = andy;
 				TargetAttributes = {
+					A1DFF04318BEEAEE00C3EE6B = {
+						DevelopmentTeam = WUGL4X3P3K;
+					};
 					A1DFF05E18BEEAEE00C3EE6B = {
 						TestTargetID = A1DFF04318BEEAEE00C3EE6B;
 					};
@@ -716,6 +719,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Zeng (U344YU3QDC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";
@@ -729,6 +733,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Zeng (U344YU3QDC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";
