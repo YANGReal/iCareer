@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from itsnib.
-    DLog(@"max = %f",CGFLOAT_MAX);
+   // DLog(@"max = %f",CGFLOAT_MAX);
 }
 
 - (void)didReceiveMemoryWarning
