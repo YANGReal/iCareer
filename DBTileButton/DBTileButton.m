@@ -25,6 +25,8 @@
 
 #define CATransform3DPerspective(t, x, y) (CATransform3DConcat(t, CATransform3DMake(1, 0, 0, x, 0, 1, 0, y, 0, 0, 1, 0, 0, 0, 0, 1)))
 #define CATransform3DMakePerspective(x, y) (CATransform3DPerspective(CATransform3DIdentity, x, y))
+#define ZoomMulriple 0.95
+#define ZoomArithmetic(x) ((x - x * ZoomMulriple) / 2)
 
 CG_INLINE CATransform3D
 CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
@@ -43,6 +45,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
 @implementation DBTileButton {
     CGSize originalSize;
     CGPoint originalCenter;
+    CGPoint originalZero;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -119,18 +122,19 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
 }
 
 -(void) touchUp: (UIButton *) sender {
-    [UIView animateWithDuration:0.01 animations:^{
-        sender.layer.zPosition = 10000;
+    [UIView animateWithDuration:0.2 animations:^{
+        sender.layer.zPosition = 0;
         CATransform3D transform = CATransform3DMakeRotation(0, 1, 0, 0);
         transform.m34 = 1.0 / -500;
         sender.layer.transform = transform;
-        sender.layer.frame = CGRectMake(sender.layer.frame.origin.x, sender.layer.frame.origin.y, originalSize.width, originalSize.height);
         
+        sender.layer.frame = CGRectMake(originalZero.x, originalZero.y, originalSize.width, originalSize.height);
+
         sender.center = originalCenter;
         
-        [((DBTileButton*)sender) disableShadow];
+//        [((DBTileButton*)sender) disableShadow];
     } completion:^(BOOL finished) {
-        sender.layer.zPosition = 0;
+        sender.layer.zPosition = 10000;
 
     }];
 }
@@ -138,7 +142,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
 -(void) touchDown: (UIButton*) sender forEvent:(UIEvent*)event{
     
     originalSize = sender.layer.frame.size;
-    
+    originalZero = CGPointMake(sender.frame.origin.x, sender.frame.origin.y);
     //get touch location
     UITouch *touch = [[event touchesForView:sender] anyObject];
     CGPoint location = [touch locationInView:sender];
@@ -157,13 +161,15 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     if (fabs(a) < sender.frame.size.width / 4.0f && fabs(b) < sender.frame.size.height / 4.0f)
     {
         [self setAnchorPoint:CGPointMake(0.5f, 0.5f) forView:sender];
-        [UIView animateWithDuration:0.01 animations:^{
+
+        [UIView animateWithDuration:0.3 animations:^{
             sender.layer.zPosition = 10000;
-            sender.layer.frame = CGRectMake(sender.layer.frame.origin.x, sender.layer.frame.origin.y, originalSize.width * 0.99, originalSize.height * 0.99);
+            sender.layer.frame = CGRectMake(originalZero.x + ZoomArithmetic(originalSize.width), originalZero.y + ZoomArithmetic(originalSize.height), originalSize.width * ZoomMulriple, originalSize.height * ZoomMulriple);
+            
             sender.center = originalCenter;
             
            // [((DBTileButton*)sender) disableShadow];
-            [((DBTileButton*)sender) enableShadow];
+//            [((DBTileButton*)sender) enableShadow];
         } completion:^(BOOL finished) {
 
         }];
@@ -175,13 +181,13 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     {
         if (a < 0) //left side
         {
-             transform3d = CATransform3DMakePerspective(0.0005,0 );
+             transform3d = CATransform3DMakePerspective(0.0006,0 );
         }
     
         else
         {
             //right side
-            transform3d = CATransform3DMakePerspective(-0.0005, 0);
+            transform3d = CATransform3DMakePerspective(-0.0006, 0);
         }
     }
     //y distance is greater
@@ -189,19 +195,18 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     {
         if (b < 0) //top
         {
-            transform3d = CATransform3DMakePerspective(0 , 0.0005);
+            transform3d = CATransform3DMakePerspective(0 , 0.0006);
         }
         else //bottom
         {
-            transform3d = CATransform3DMakePerspective(0 , -0.0005);
+            transform3d = CATransform3DMakePerspective(0 , -0.0006);
         }
     }
     
-    [UIView animateWithDuration:0.1 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         sender.layer.zPosition = 10000;
         sender.layer.transform = transform3d;
     } completion:^(BOOL finished) {
-        
     }];
 }
 
