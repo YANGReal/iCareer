@@ -88,6 +88,8 @@
 - (void)rightBarButtonItemClicked
 {
     DLog(@"this is rightItem!");
+    NBLoginViewController *loginVC = [[NBLoginViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBLoginViewController"] bundle:nil];
+    [self.navigationController pushViewController:loginVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
