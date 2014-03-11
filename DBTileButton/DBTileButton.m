@@ -134,7 +134,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
         
 //        [((DBTileButton*)sender) disableShadow];
     } completion:^(BOOL finished) {
-//        sender.layer.zPosition = 10000;
+        sender.layer.zPosition = 10000;
 
     }];
 }

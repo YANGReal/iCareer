@@ -7,7 +7,7 @@
 //
 
 #import "NBLoginViewController.h"
-
+#import "NBFindPWViewController.h"
 @interface NBLoginViewController ()<UITextFieldDelegate,UIActionSheetDelegate>
 
 
@@ -136,6 +136,28 @@
     }
     return YES;
 }
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NBFindPWViewController *findVC = nil;
+    if(buttonIndex == 0)//手机号
+    {
+        findVC = [[NBFindPWViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBFindPWViewController"] bundle:nil];
+        findVC.findType = phoneType;
+    }
+    if (buttonIndex == 1)//E-mail
+    {
+       findVC = [[NBFindPWViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBFindPWViewController"] bundle:nil];
+        findVC.findType = emailType;
+    }
+    if (buttonIndex == 2)
+    {
+        return;
+    }
+    [self.navigationController pushViewController:findVC animated:YES];
+}
+
+
 
 #pragma mark - Memory Manage
 

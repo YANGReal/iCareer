@@ -55,6 +55,12 @@
 		14F59E6018CEE39B004CD0BB /* renren.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5C18CEE39B004CD0BB /* renren.png */; };
 		14F59E6118CEE39B004CD0BB /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5D18CEE39B004CD0BB /* weibo.png */; };
 		14F59E6418CEFD7B004CD0BB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E6318CEFD7B004CD0BB /* back.png */; };
+		14F59E6818CF0480004CD0BB /* NBFindPWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F59E6618CF0480004CD0BB /* NBFindPWViewController.m */; };
+		14F59E6918CF0480004CD0BB /* NBFindPWViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E6718CF0480004CD0BB /* NBFindPWViewController_iPhone5.xib */; };
+		14F59E6C18CF04DA004CD0BB /* NBFindPWViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E6B18CF04DA004CD0BB /* NBFindPWViewController_iPhone4.xib */; };
+		14F59E7118CF0F4E004CD0BB /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E6E18CF0F4E004CD0BB /* mail.png */; };
+		14F59E7218CF0F4E004CD0BB /* sms.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E6F18CF0F4E004CD0BB /* sms.png */; };
+		14F59E7318CF0F4E004CD0BB /* textField2.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E7018CF0F4E004CD0BB /* textField2.png */; };
 		A1DFF04818BEEAEE00C3EE6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04718BEEAEE00C3EE6B /* Foundation.framework */; };
 		A1DFF04A18BEEAEE00C3EE6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04918BEEAEE00C3EE6B /* CoreGraphics.framework */; };
 		A1DFF04C18BEEAEE00C3EE6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04B18BEEAEE00C3EE6B /* UIKit.framework */; };
@@ -167,6 +173,13 @@
 		14F59E5C18CEE39B004CD0BB /* renren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = renren.png; sourceTree = "<group>"; };
 		14F59E5D18CEE39B004CD0BB /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
 		14F59E6318CEFD7B004CD0BB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		14F59E6518CF0480004CD0BB /* NBFindPWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBFindPWViewController.h; path = FindPassWord/NBFindPWViewController.h; sourceTree = "<group>"; };
+		14F59E6618CF0480004CD0BB /* NBFindPWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBFindPWViewController.m; path = FindPassWord/NBFindPWViewController.m; sourceTree = "<group>"; };
+		14F59E6718CF0480004CD0BB /* NBFindPWViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBFindPWViewController_iPhone5.xib; path = FindPassWord/NBFindPWViewController_iPhone5.xib; sourceTree = "<group>"; };
+		14F59E6B18CF04DA004CD0BB /* NBFindPWViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBFindPWViewController_iPhone4.xib; path = FindPassWord/NBFindPWViewController_iPhone4.xib; sourceTree = "<group>"; };
+		14F59E6E18CF0F4E004CD0BB /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		14F59E6F18CF0F4E004CD0BB /* sms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sms.png; sourceTree = "<group>"; };
+		14F59E7018CF0F4E004CD0BB /* textField2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textField2.png; sourceTree = "<group>"; };
 		A1DFF04418BEEAEE00C3EE6B /* iCareer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCareer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DFF04718BEEAEE00C3EE6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1DFF04918BEEAEE00C3EE6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -429,6 +442,7 @@
 			children = (
 				14F59E6218CEFD7B004CD0BB /* Global */,
 				14F59E4F18CEDE23004CD0BB /* Login */,
+				14F59E6D18CF0F4E004CD0BB /* FindPassword */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -455,6 +469,27 @@
 				14F59E6318CEFD7B004CD0BB /* back.png */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		14F59E6A18CF0485004CD0BB /* 找回密码 */ = {
+			isa = PBXGroup;
+			children = (
+				14F59E6518CF0480004CD0BB /* NBFindPWViewController.h */,
+				14F59E6618CF0480004CD0BB /* NBFindPWViewController.m */,
+				14F59E6718CF0480004CD0BB /* NBFindPWViewController_iPhone5.xib */,
+				14F59E6B18CF04DA004CD0BB /* NBFindPWViewController_iPhone4.xib */,
+			);
+			name = "找回密码";
+			sourceTree = "<group>";
+		};
+		14F59E6D18CF0F4E004CD0BB /* FindPassword */ = {
+			isa = PBXGroup;
+			children = (
+				14F59E6E18CF0F4E004CD0BB /* mail.png */,
+				14F59E6F18CF0F4E004CD0BB /* sms.png */,
+				14F59E7018CF0F4E004CD0BB /* textField2.png */,
+			);
+			path = FindPassword;
 			sourceTree = "<group>";
 		};
 		A1DFF03B18BEEAEE00C3EE6B = {
@@ -508,6 +543,7 @@
 				140C837B18BF241200BF65AB /* NBBaseViewController */,
 				140C838418BF25AB00BF65AB /* 主界面 */,
 				14F59E4B18CEDC1E004CD0BB /* 登陆 */,
+				14F59E6A18CF0485004CD0BB /* 找回密码 */,
 				A1DFF04E18BEEAEE00C3EE6B /* Supporting Files */,
 			);
 			path = iCareer;
@@ -629,9 +665,14 @@
 				14F59E5918CEE1BE004CD0BB /* loginBtn.png in Resources */,
 				14F59E6118CEE39B004CD0BB /* weibo.png in Resources */,
 				14088A4C18C844D30098A404 /* NBMainViewController_iPhone5.xib in Resources */,
+				14F59E6918CF0480004CD0BB /* NBFindPWViewController_iPhone5.xib in Resources */,
 				14F59E5318CEDFC9004CD0BB /* peple.png in Resources */,
 				14F59E6018CEE39B004CD0BB /* renren.png in Resources */,
+				14F59E7318CF0F4E004CD0BB /* textField2.png in Resources */,
+				14F59E6C18CF04DA004CD0BB /* NBFindPWViewController_iPhone4.xib in Resources */,
 				140C838918BF25AB00BF65AB /* NBMainViewController_iPhone4.xib in Resources */,
+				14F59E7118CF0F4E004CD0BB /* mail.png in Resources */,
+				14F59E7218CF0F4E004CD0BB /* sms.png in Resources */,
 				14F59E5118CEDE23004CD0BB /* textField.png in Resources */,
 				A1DFF05218BEEAEE00C3EE6B /* InfoPlist.strings in Resources */,
 				14F59E6418CEFD7B004CD0BB /* back.png in Resources */,
@@ -657,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140C831E18BF0B2100BF65AB /* AFURLConnectionOperation.m in Sources */,
+				14F59E6818CF0480004CD0BB /* NBFindPWViewController.m in Sources */,
 				140C830218BF0B1A00BF65AB /* UIProgressView+AFNetworking.m in Sources */,
 				140C831D18BF0B2100BF65AB /* AFSecurityPolicy.m in Sources */,
 				A1DFF05818BEEAEE00C3EE6B /* NBAppDelegate.m in Sources */,
