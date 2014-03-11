@@ -27,7 +27,7 @@
  创建纯色UIImage
  */
 
-+ (UIImage *)createImageWithColor:(UIColor *)color;
++ (UIImage *)createImageWithColor:(UIColor *)color andImageHeight:(CGFloat) height;
 
 
 /*

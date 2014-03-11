@@ -6,7 +6,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NBMainViewController">
             <connections>
-                <outlet property="button" destination="iU3-P8-dvm" id="n9M-R0-Odd"/>
+                <outlet property="chanceButton" destination="OuN-or-5gm" id="3Iw-LJ-tQj"/>
+                <outlet property="circleButton" destination="Bey-pw-2Ru" id="hSX-d2-xAQ"/>
+                <outlet property="evaluatingButton" destination="IZ3-CV-GAz" id="YgB-vq-8kB"/>
+                <outlet property="messageButton" destination="PKI-If-AeJ" id="Aq9-FT-fLF"/>
+                <outlet property="recommendButton" destination="8Ae-st-zT0" id="cSH-yC-uZK"/>
+                <outlet property="resumeButton" destination="md3-tw-bkX" id="Jra-fP-mwM"/>
+                <outlet property="searchBar" destination="V4k-X8-KmM" id="Hfl-AL-Vul"/>
+                <outlet property="searchButton" destination="2FS-yH-62R" id="bbl-mc-TNQ"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -15,12 +22,71 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iU3-P8-dvm" customClass="DBTileButton">
-                    <rect key="frame" x="-20" y="64" width="340" height="200"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ae-st-zT0" customClass="DBTileButton">
+                    <rect key="frame" x="5" y="417" width="152" height="72"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="0.086457343330000005" blue="0.25325823650000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button">
+                    <color key="backgroundColor" red="0.99607849120000003" green="0.62745100259999997" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKI-If-AeJ" customClass="DBTileButton">
+                    <rect key="frame" x="5" y="300" width="152" height="112"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.1294117719" green="0.63529413940000001" blue="0.88235300780000003" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md3-tw-bkX" customClass="DBTileButton">
+                    <rect key="frame" x="162" y="300" width="153" height="112"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.39607846740000002" green="0.15686275059999999" blue="0.49019610879999997" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZ3-CV-GAz" customClass="DBTileButton">
+                    <rect key="frame" x="5" y="494" width="152" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.73725491759999995" green="0.33333334329999997" blue="0.54509806630000002" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bey-pw-2Ru" customClass="DBTileButton">
+                    <rect key="frame" x="162" y="417" width="153" height="149"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.15294118230000001" green="0.23529413339999999" blue="0.47450983520000001" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuN-or-5gm" customClass="DBTileButton">
+                    <rect key="frame" x="0.0" y="108" width="320" height="187"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.30980393290000002" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4k-X8-KmM">
+                    <rect key="frame" x="0.0" y="64" width="253" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FS-yH-62R">
+                    <rect key="frame" x="253" y="64" width="67" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.15294118230000001" green="0.23529413339999999" blue="0.47450983520000001" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
