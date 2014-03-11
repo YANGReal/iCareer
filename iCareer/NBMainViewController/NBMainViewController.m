@@ -51,7 +51,7 @@
     [leftButton setTitle:@"重庆" forState:UIControlStateNormal];
     [leftButton setTitleColor:[UIColor colorWithHexString:@"#f5544b"] forState:UIControlStateNormal];
     [leftButton setFrame:RECT(0, 0, 40, 20)];
-    [leftButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 10, 0)];
+    [leftButton setTitleEdgeInsets:UIEdgeInsetsMake(5, 0, 0, 0)];
     [leftButton addTarget:self action:@selector(leftBarButtonItemClicked) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     [self.navigationItem setLeftBarButtonItem:leftItem];
@@ -61,6 +61,7 @@
     [rightButton setTitle:@"登录" forState:UIControlStateNormal];
     [rightButton setTitleColor:[UIColor colorWithHexString:@"#f5544b"] forState:UIControlStateNormal];
     [rightButton setFrame:RECT(0, 0, 40, 20)];
+    [rightButton setTitleEdgeInsets:UIEdgeInsetsMake(5, 0, 0, 0)];
     [rightButton addTarget:self action:@selector(rightBarButtonItemClicked) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
     [self.navigationItem setRightBarButtonItem:rightItem];

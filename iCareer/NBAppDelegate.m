@@ -19,7 +19,7 @@
     NSString *nibName = [AppUtility getNibNameFromViewController:@"NBMainViewController"];
     self.mainVC = [[NBMainViewController alloc] initWithNibName:nibName bundle:nil];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor clearColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
     //This is create by Andy
