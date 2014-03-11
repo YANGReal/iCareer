@@ -42,6 +42,19 @@
 		140C837E18BF241200BF65AB /* NBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C837D18BF241200BF65AB /* NBBaseViewController.m */; };
 		140C838818BF25AB00BF65AB /* NBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C838618BF25AB00BF65AB /* NBMainViewController.m */; };
 		140C838918BF25AB00BF65AB /* NBMainViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */; };
+		14F59E4918CEDC0B004CD0BB /* NBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F59E4718CEDC0B004CD0BB /* NBLoginViewController.m */; };
+		14F59E4A18CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E4818CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib */; };
+		14F59E4D18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E4C18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib */; };
+		14F59E5118CEDE23004CD0BB /* textField.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5018CEDE23004CD0BB /* textField.png */; };
+		14F59E5318CEDFC9004CD0BB /* peple.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5218CEDFC9004CD0BB /* peple.png */; };
+		14F59E5718CEE1BE004CD0BB /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5418CEE1BE004CD0BB /* check.png */; };
+		14F59E5818CEE1BE004CD0BB /* checkBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5518CEE1BE004CD0BB /* checkBox.png */; };
+		14F59E5918CEE1BE004CD0BB /* loginBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5618CEE1BE004CD0BB /* loginBtn.png */; };
+		14F59E5E18CEE39B004CD0BB /* go.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5A18CEE39B004CD0BB /* go.png */; };
+		14F59E5F18CEE39B004CD0BB /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5B18CEE39B004CD0BB /* qq.png */; };
+		14F59E6018CEE39B004CD0BB /* renren.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5C18CEE39B004CD0BB /* renren.png */; };
+		14F59E6118CEE39B004CD0BB /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E5D18CEE39B004CD0BB /* weibo.png */; };
+		14F59E6418CEFD7B004CD0BB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E6318CEFD7B004CD0BB /* back.png */; };
 		A1DFF04818BEEAEE00C3EE6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04718BEEAEE00C3EE6B /* Foundation.framework */; };
 		A1DFF04A18BEEAEE00C3EE6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04918BEEAEE00C3EE6B /* CoreGraphics.framework */; };
 		A1DFF04C18BEEAEE00C3EE6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04B18BEEAEE00C3EE6B /* UIKit.framework */; };
@@ -140,6 +153,20 @@
 		140C838518BF25AB00BF65AB /* NBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMainViewController.h; sourceTree = "<group>"; };
 		140C838618BF25AB00BF65AB /* NBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMainViewController.m; sourceTree = "<group>"; };
 		140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NBMainViewController_iPhone4.xib; sourceTree = "<group>"; };
+		14F59E4618CEDC0B004CD0BB /* NBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBLoginViewController.h; path = Login/NBLoginViewController.h; sourceTree = "<group>"; };
+		14F59E4718CEDC0B004CD0BB /* NBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBLoginViewController.m; path = Login/NBLoginViewController.m; sourceTree = "<group>"; };
+		14F59E4818CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBLoginViewController_iPhone5.xib; path = Login/NBLoginViewController_iPhone5.xib; sourceTree = "<group>"; };
+		14F59E4C18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBLoginViewController_iPhone4.xib; path = Login/NBLoginViewController_iPhone4.xib; sourceTree = "<group>"; };
+		14F59E5018CEDE23004CD0BB /* textField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textField.png; sourceTree = "<group>"; };
+		14F59E5218CEDFC9004CD0BB /* peple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peple.png; sourceTree = "<group>"; };
+		14F59E5418CEE1BE004CD0BB /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		14F59E5518CEE1BE004CD0BB /* checkBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBox.png; sourceTree = "<group>"; };
+		14F59E5618CEE1BE004CD0BB /* loginBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBtn.png; sourceTree = "<group>"; };
+		14F59E5A18CEE39B004CD0BB /* go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = go.png; sourceTree = "<group>"; };
+		14F59E5B18CEE39B004CD0BB /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
+		14F59E5C18CEE39B004CD0BB /* renren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = renren.png; sourceTree = "<group>"; };
+		14F59E5D18CEE39B004CD0BB /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
+		14F59E6318CEFD7B004CD0BB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		A1DFF04418BEEAEE00C3EE6B /* iCareer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCareer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DFF04718BEEAEE00C3EE6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1DFF04918BEEAEE00C3EE6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -374,7 +401,7 @@
 			path = NBBaseViewController;
 			sourceTree = "<group>";
 		};
-		140C838418BF25AB00BF65AB /* NBMainViewController */ = {
+		140C838418BF25AB00BF65AB /* 主界面 */ = {
 			isa = PBXGroup;
 			children = (
 				140C838518BF25AB00BF65AB /* NBMainViewController.h */,
@@ -382,7 +409,52 @@
 				140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */,
 				14088A4B18C844D30098A404 /* NBMainViewController_iPhone5.xib */,
 			);
+			name = "主界面";
 			path = NBMainViewController;
+			sourceTree = "<group>";
+		};
+		14F59E4B18CEDC1E004CD0BB /* 登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				14F59E4618CEDC0B004CD0BB /* NBLoginViewController.h */,
+				14F59E4718CEDC0B004CD0BB /* NBLoginViewController.m */,
+				14F59E4818CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib */,
+				14F59E4C18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib */,
+			);
+			name = "登陆";
+			sourceTree = "<group>";
+		};
+		14F59E4E18CEDE23004CD0BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				14F59E6218CEFD7B004CD0BB /* Global */,
+				14F59E4F18CEDE23004CD0BB /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		14F59E4F18CEDE23004CD0BB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				14F59E5A18CEE39B004CD0BB /* go.png */,
+				14F59E5B18CEE39B004CD0BB /* qq.png */,
+				14F59E5C18CEE39B004CD0BB /* renren.png */,
+				14F59E5D18CEE39B004CD0BB /* weibo.png */,
+				14F59E5018CEDE23004CD0BB /* textField.png */,
+				14F59E5218CEDFC9004CD0BB /* peple.png */,
+				14F59E5418CEE1BE004CD0BB /* check.png */,
+				14F59E5518CEE1BE004CD0BB /* checkBox.png */,
+				14F59E5618CEE1BE004CD0BB /* loginBtn.png */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		14F59E6218CEFD7B004CD0BB /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				14F59E6318CEFD7B004CD0BB /* back.png */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 		A1DFF03B18BEEAEE00C3EE6B = {
@@ -392,6 +464,7 @@
 				A1DFF06618BEEAEE00C3EE6B /* iCareerTests */,
 				140C82EA18BF0AF600BF65AB /* ThirdPartLibrary */,
 				140C835618BF226E00BF65AB /* Utility */,
+				14F59E4E18CEDE23004CD0BB /* UI */,
 				A1DFF04618BEEAEE00C3EE6B /* Frameworks */,
 				A1DFF04518BEEAEE00C3EE6B /* Products */,
 			);
@@ -433,7 +506,8 @@
 				A1DFF05618BEEAEE00C3EE6B /* NBAppDelegate.h */,
 				A1DFF05718BEEAEE00C3EE6B /* NBAppDelegate.m */,
 				140C837B18BF241200BF65AB /* NBBaseViewController */,
-				140C838418BF25AB00BF65AB /* NBMainViewController */,
+				140C838418BF25AB00BF65AB /* 主界面 */,
+				14F59E4B18CEDC1E004CD0BB /* 登陆 */,
 				A1DFF04E18BEEAEE00C3EE6B /* Supporting Files */,
 			);
 			path = iCareer;
@@ -548,10 +622,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F59E5F18CEE39B004CD0BB /* qq.png in Resources */,
+				14F59E5818CEE1BE004CD0BB /* checkBox.png in Resources */,
+				14F59E5718CEE1BE004CD0BB /* check.png in Resources */,
+				14F59E4D18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib in Resources */,
+				14F59E5918CEE1BE004CD0BB /* loginBtn.png in Resources */,
+				14F59E6118CEE39B004CD0BB /* weibo.png in Resources */,
 				14088A4C18C844D30098A404 /* NBMainViewController_iPhone5.xib in Resources */,
+				14F59E5318CEDFC9004CD0BB /* peple.png in Resources */,
+				14F59E6018CEE39B004CD0BB /* renren.png in Resources */,
 				140C838918BF25AB00BF65AB /* NBMainViewController_iPhone4.xib in Resources */,
+				14F59E5118CEDE23004CD0BB /* textField.png in Resources */,
 				A1DFF05218BEEAEE00C3EE6B /* InfoPlist.strings in Resources */,
+				14F59E6418CEFD7B004CD0BB /* back.png in Resources */,
 				A1DFF05A18BEEAEE00C3EE6B /* Images.xcassets in Resources */,
+				14F59E4A18CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib in Resources */,
+				14F59E5E18CEE39B004CD0BB /* go.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +682,7 @@
 				140C837318BF226E00BF65AB /* UIColor+HexString.m in Sources */,
 				140C837118BF226E00BF65AB /* NSDictionary+JSON.m in Sources */,
 				140C82FF18BF0B1A00BF65AB /* UIAlertView+AFNetworking.m in Sources */,
+				14F59E4918CEDC0B004CD0BB /* NBLoginViewController.m in Sources */,
 				140C837518BF226E00BF65AB /* UIView+Border.m in Sources */,
 				140C831918BF0B2100BF65AB /* AFHTTPRequestOperation.m in Sources */,
 				140C837418BF226E00BF65AB /* UIImage+Loader.m in Sources */,
@@ -719,7 +806,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Zeng (U344YU3QDC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";
@@ -733,7 +820,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Zeng (U344YU3QDC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";

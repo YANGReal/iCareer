@@ -8,7 +8,7 @@
 
 #import "NBMainViewController.h"
 
-@interface NBMainViewController ()
+@interface NBMainViewController ()<UIGestureRecognizerDelegate>
 
 @property (weak, nonatomic) IBOutlet DBTileButton *chanceButton;//机会
 @property (weak , nonatomic) IBOutlet DBTileButton *messageButton;//消息
@@ -34,6 +34,8 @@
 {
     [super viewDidLoad];
     [self.navigationController.navigationBar setBarTintColor:[UIColor clearColor]];
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     [self setupUIBarButtonItem];
 }
 
@@ -69,7 +71,22 @@
 
 - (void)rightBarButtonItemClicked
 {
-    DLog(@"this is rightItem!");
+   // DLog(@"this is rightItem!");
+    NBLoginViewController *loginVC = [[NBLoginViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBLoginViewController"] bundle:nil];
+    [self.navigationController pushViewController:loginVC animated:YES];
+}
+
+
+#pragma mark - UIGestureRecognizerDelegate method
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    DLog(@"vc = %d",self.navigationController.viewControllers.count);
+    if (self.navigationController.viewControllers.count<=1)
+    {
+        return NO;
+    }
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
