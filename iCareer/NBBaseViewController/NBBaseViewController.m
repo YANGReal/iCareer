@@ -27,7 +27,26 @@
 {
     [super viewDidLoad];
     self.view.frame = IP5ORIP4FRAME;
+    [self setupLeftBarButtonItem];
 	// Do any additional setup after loading the view.
+}
+
+
+- (void)setupLeftBarButtonItem
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = RECT(0, 0, 18, 30);
+    //[btn setTitle:@"返回" forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageFromMainBundleFile:@"back.png"] forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor colorWithHexString:@"#f5544b"] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+}
+
+
+- (void)back
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning
