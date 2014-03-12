@@ -28,7 +28,7 @@
 #import "MSDynamicsDrawerStyler.h"
 #import "NBAppDelegate.h"
 #import "NBNavigationController.h"
-#import "NBLocationManager.h"
+#import "MMLocationManager.h"
 #pragma mark --定义常用宏
 
 

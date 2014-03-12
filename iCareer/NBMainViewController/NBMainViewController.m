@@ -65,7 +65,7 @@
     [leftButton addSubview:indicatorView];
     [indicatorView startAnimating];
     
-    [[NBLocationManager shareLocation] getCity:^(NSString *addressString) {
+    [[MMLocationManager shareLocation] getCity:^(NSString *addressString) {
         
         [leftButton setTitle:addressString forState:UIControlStateNormal];
        // DLog(@"address = %@",addressString);
