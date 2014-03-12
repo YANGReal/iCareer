@@ -35,7 +35,7 @@
 - (void)setupLeftBarButtonItem
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = RECT(0, 0, 18, 30);
+    btn.frame = RECT(0, 0, 9, 15);
     //[btn setTitle:@"返回" forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageFromMainBundleFile:@"back.png"] forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor colorWithHexString:@"#f5544b"] forState:UIControlStateNormal];

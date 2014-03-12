@@ -162,7 +162,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     {
         [self setAnchorPoint:CGPointMake(0.5f, 0.5f) forView:sender];
 
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.2 animations:^{
             sender.layer.zPosition = 10000;
             sender.layer.frame = CGRectMake(originalZero.x + ZoomArithmetic(originalSize.width), originalZero.y + ZoomArithmetic(originalSize.height), originalSize.width * ZoomMulriple, originalSize.height * ZoomMulriple);
             
@@ -203,7 +203,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
         }
     }
     
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
         sender.layer.zPosition = 10000;
         sender.layer.transform = transform3d;
     } completion:^(BOOL finished) {
