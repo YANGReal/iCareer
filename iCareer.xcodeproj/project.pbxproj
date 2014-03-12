@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1403FB4818CFF9D000E8DA92 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1403FB4718CFF9D000E8DA92 /* Accelerate.framework */; };
+		1403FB5518CFFCB100E8DA92 /* NZAlertView-Icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1403FB4D18CFFCB100E8DA92 /* NZAlertView-Icons.bundle */; };
+		1403FB5618CFFCB100E8DA92 /* NZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403FB4F18CFFCB100E8DA92 /* NZAlertView.m */; };
+		1403FB5718CFFCB100E8DA92 /* NZAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1403FB5318CFFCB100E8DA92 /* NZAlertView.xib */; };
+		1403FB5D18D0081A00E8DA92 /* MSDynamicsDrawerStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403FB5A18D0081A00E8DA92 /* MSDynamicsDrawerStyler.m */; };
+		1403FB5E18D0081A00E8DA92 /* MSDynamicsDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403FB5C18D0081A00E8DA92 /* MSDynamicsDrawerViewController.m */; };
+		1403FB6218D00A8500E8DA92 /* NBLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403FB6018D00A8500E8DA92 /* NBLeftMenuViewController.m */; };
+		1403FB6318D00A8500E8DA92 /* NBLeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1403FB6118D00A8500E8DA92 /* NBLeftMenuViewController.xib */; };
 		14088A4618C842200098A404 /* DBTileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14088A4518C842200098A404 /* DBTileButton.m */; };
 		14088A4918C8434B0098A404 /* AppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 14088A4818C8434B0098A404 /* AppUtility.m */; };
 		14088A4C18C844D30098A404 /* NBMainViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14088A4B18C844D30098A404 /* NBMainViewController_iPhone5.xib */; };
@@ -92,6 +100,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1403FB4718CFF9D000E8DA92 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1403FB4D18CFFCB100E8DA92 /* NZAlertView-Icons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "NZAlertView-Icons.bundle"; sourceTree = "<group>"; };
+		1403FB4E18CFFCB100E8DA92 /* NZAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertView.h; sourceTree = "<group>"; };
+		1403FB4F18CFFCB100E8DA92 /* NZAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAlertView.m; sourceTree = "<group>"; };
+		1403FB5118CFFCB100E8DA92 /* NZAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertViewDelegate.h; sourceTree = "<group>"; };
+		1403FB5318CFFCB100E8DA92 /* NZAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NZAlertView.xib; sourceTree = "<group>"; };
+		1403FB5918D0081A00E8DA92 /* MSDynamicsDrawerStyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDynamicsDrawerStyler.h; sourceTree = "<group>"; };
+		1403FB5A18D0081A00E8DA92 /* MSDynamicsDrawerStyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerStyler.m; sourceTree = "<group>"; };
+		1403FB5B18D0081A00E8DA92 /* MSDynamicsDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDynamicsDrawerViewController.h; sourceTree = "<group>"; };
+		1403FB5C18D0081A00E8DA92 /* MSDynamicsDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerViewController.m; sourceTree = "<group>"; };
+		1403FB5F18D00A8500E8DA92 /* NBLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBLeftMenuViewController.h; path = LeftMenu/NBLeftMenuViewController.h; sourceTree = "<group>"; };
+		1403FB6018D00A8500E8DA92 /* NBLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBLeftMenuViewController.m; path = LeftMenu/NBLeftMenuViewController.m; sourceTree = "<group>"; };
+		1403FB6118D00A8500E8DA92 /* NBLeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBLeftMenuViewController.xib; path = LeftMenu/NBLeftMenuViewController.xib; sourceTree = "<group>"; };
 		14088A4418C842200098A404 /* DBTileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTileButton.h; sourceTree = "<group>"; };
 		14088A4518C842200098A404 /* DBTileButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTileButton.m; sourceTree = "<group>"; };
 		14088A4718C8434B0098A404 /* AppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppUtility.h; path = AppUtility/AppUtility.h; sourceTree = "<group>"; };
@@ -209,6 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1403FB4818CFF9D000E8DA92 /* Accelerate.framework in Frameworks */,
 				140C832618BF0ED200BF65AB /* SystemConfiguration.framework in Frameworks */,
 				140C832418BF0C6A00BF65AB /* QuartzCore.framework in Frameworks */,
 				140C82E918BF094B00BF65AB /* libicucore.dylib in Frameworks */,
@@ -238,6 +260,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1403FB4918CFFCB100E8DA92 /* NZAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				1403FB4D18CFFCB100E8DA92 /* NZAlertView-Icons.bundle */,
+				1403FB4E18CFFCB100E8DA92 /* NZAlertView.h */,
+				1403FB4F18CFFCB100E8DA92 /* NZAlertView.m */,
+				1403FB5018CFFCB100E8DA92 /* Protocols */,
+				1403FB5218CFFCB100E8DA92 /* Views */,
+			);
+			path = NZAlertView;
+			sourceTree = "<group>";
+		};
+		1403FB5018CFFCB100E8DA92 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1403FB5118CFFCB100E8DA92 /* NZAlertViewDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1403FB5218CFFCB100E8DA92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1403FB5318CFFCB100E8DA92 /* NZAlertView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1403FB5818D0081A00E8DA92 /* MSDynamicsDrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1403FB5918D0081A00E8DA92 /* MSDynamicsDrawerStyler.h */,
+				1403FB5A18D0081A00E8DA92 /* MSDynamicsDrawerStyler.m */,
+				1403FB5B18D0081A00E8DA92 /* MSDynamicsDrawerViewController.h */,
+				1403FB5C18D0081A00E8DA92 /* MSDynamicsDrawerViewController.m */,
+			);
+			path = MSDynamicsDrawerViewController;
+			sourceTree = "<group>";
+		};
+		1403FB6418D00A8D00E8DA92 /* 左边栏 */ = {
+			isa = PBXGroup;
+			children = (
+				1403FB5F18D00A8500E8DA92 /* NBLeftMenuViewController.h */,
+				1403FB6018D00A8500E8DA92 /* NBLeftMenuViewController.m */,
+				1403FB6118D00A8500E8DA92 /* NBLeftMenuViewController.xib */,
+			);
+			name = "左边栏";
+			sourceTree = "<group>";
+		};
 		14088A4318C842200098A404 /* DBTileButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +330,8 @@
 		140C82EA18BF0AF600BF65AB /* ThirdPartLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				1403FB5818D0081A00E8DA92 /* MSDynamicsDrawerViewController */,
+				1403FB4918CFFCB100E8DA92 /* NZAlertView */,
 				140C830518BF0B2100BF65AB /* AFNetworking */,
 				140C82EB18BF0B1A00BF65AB /* UIKit+AFNetworking */,
 				14088A4318C842200098A404 /* DBTileButton */,
@@ -517,6 +590,7 @@
 		A1DFF04618BEEAEE00C3EE6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1403FB4718CFF9D000E8DA92 /* Accelerate.framework */,
 				140C832518BF0ED200BF65AB /* SystemConfiguration.framework */,
 				140C832318BF0C6A00BF65AB /* QuartzCore.framework */,
 				140C82E818BF094B00BF65AB /* libicucore.dylib */,
@@ -542,6 +616,7 @@
 				A1DFF05718BEEAEE00C3EE6B /* NBAppDelegate.m */,
 				140C837B18BF241200BF65AB /* NBBaseViewController */,
 				140C838418BF25AB00BF65AB /* 主界面 */,
+				1403FB6418D00A8D00E8DA92 /* 左边栏 */,
 				14F59E4B18CEDC1E004CD0BB /* 登陆 */,
 				14F59E6A18CF0485004CD0BB /* 找回密码 */,
 				A1DFF04E18BEEAEE00C3EE6B /* Supporting Files */,
@@ -664,11 +739,13 @@
 				14F59E4D18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib in Resources */,
 				14F59E5918CEE1BE004CD0BB /* loginBtn.png in Resources */,
 				14F59E6118CEE39B004CD0BB /* weibo.png in Resources */,
+				1403FB5518CFFCB100E8DA92 /* NZAlertView-Icons.bundle in Resources */,
 				14088A4C18C844D30098A404 /* NBMainViewController_iPhone5.xib in Resources */,
 				14F59E6918CF0480004CD0BB /* NBFindPWViewController_iPhone5.xib in Resources */,
 				14F59E5318CEDFC9004CD0BB /* peple.png in Resources */,
 				14F59E6018CEE39B004CD0BB /* renren.png in Resources */,
 				14F59E7318CF0F4E004CD0BB /* textField2.png in Resources */,
+				1403FB6318D00A8500E8DA92 /* NBLeftMenuViewController.xib in Resources */,
 				14F59E6C18CF04DA004CD0BB /* NBFindPWViewController_iPhone4.xib in Resources */,
 				140C838918BF25AB00BF65AB /* NBMainViewController_iPhone4.xib in Resources */,
 				14F59E7118CF0F4E004CD0BB /* mail.png in Resources */,
@@ -677,6 +754,7 @@
 				A1DFF05218BEEAEE00C3EE6B /* InfoPlist.strings in Resources */,
 				14F59E6418CEFD7B004CD0BB /* back.png in Resources */,
 				A1DFF05A18BEEAEE00C3EE6B /* Images.xcassets in Resources */,
+				1403FB5718CFFCB100E8DA92 /* NZAlertView.xib in Resources */,
 				14F59E4A18CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib in Resources */,
 				14F59E5E18CEE39B004CD0BB /* go.png in Resources */,
 			);
@@ -700,6 +778,7 @@
 				140C831E18BF0B2100BF65AB /* AFURLConnectionOperation.m in Sources */,
 				14F59E6818CF0480004CD0BB /* NBFindPWViewController.m in Sources */,
 				140C830218BF0B1A00BF65AB /* UIProgressView+AFNetworking.m in Sources */,
+				1403FB5618CFFCB100E8DA92 /* NZAlertView.m in Sources */,
 				140C831D18BF0B2100BF65AB /* AFSecurityPolicy.m in Sources */,
 				A1DFF05818BEEAEE00C3EE6B /* NBAppDelegate.m in Sources */,
 				140C831A18BF0B2100BF65AB /* AFHTTPRequestOperationManager.m in Sources */,
@@ -710,6 +789,7 @@
 				140C82FE18BF0B1A00BF65AB /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				14088A4918C8434B0098A404 /* AppUtility.m in Sources */,
 				140C830318BF0B1A00BF65AB /* UIRefreshControl+AFNetworking.m in Sources */,
+				1403FB5D18D0081A00E8DA92 /* MSDynamicsDrawerStyler.m in Sources */,
 				140C832118BF0B2100BF65AB /* AFURLSessionManager.m in Sources */,
 				140C837E18BF241200BF65AB /* NBBaseViewController.m in Sources */,
 				140C832018BF0B2100BF65AB /* AFURLResponseSerialization.m in Sources */,
@@ -717,6 +797,7 @@
 				140C830118BF0B1A00BF65AB /* UIImageView+AFNetworking.m in Sources */,
 				140C837218BF226E00BF65AB /* RegexKitLite.m in Sources */,
 				140C831F18BF0B2100BF65AB /* AFURLRequestSerialization.m in Sources */,
+				1403FB6218D00A8500E8DA92 /* NBLeftMenuViewController.m in Sources */,
 				140C831C18BF0B2100BF65AB /* AFNetworkReachabilityManager.m in Sources */,
 				140C837018BF226E00BF65AB /* NBNetworkEngine.m in Sources */,
 				140C837718BF226E00BF65AB /* UIView+ModifyFrame.m in Sources */,
@@ -729,6 +810,7 @@
 				140C831918BF0B2100BF65AB /* AFHTTPRequestOperation.m in Sources */,
 				140C837418BF226E00BF65AB /* UIImage+Loader.m in Sources */,
 				140C838818BF25AB00BF65AB /* NBMainViewController.m in Sources */,
+				1403FB5E18D0081A00E8DA92 /* MSDynamicsDrawerViewController.m in Sources */,
 				140C831B18BF0B2100BF65AB /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -848,8 +930,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";
@@ -864,8 +946,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";
