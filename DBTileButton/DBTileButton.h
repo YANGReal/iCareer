@@ -24,4 +24,6 @@
 
 @interface DBTileButton : UIButton
 
+-(void) touchUp: (UIButton *) sender;
+
 @end

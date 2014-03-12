@@ -76,12 +76,12 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
 }
 
 -(void) commonInit {
-    
+    [self setExclusiveTouch:YES];
     //enable the shadow
     //[self enableShadow];
     
     [self addTarget:self action:@selector(touchDown:forEvent:) forControlEvents:UIControlEventTouchDown];
-    [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
+//    [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
 }
 
 -(void) enableShadow {
@@ -122,19 +122,16 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
 }
 
 -(void) touchUp: (UIButton *) sender {
-    [UIView animateWithDuration:0.2 animations:^{
+        [UIView animateWithDuration:0.2 animations:^{
         sender.layer.zPosition = 0;
         CATransform3D transform = CATransform3DMakeRotation(0, 1, 0, 0);
         transform.m34 = 1.0 / -500;
         sender.layer.transform = transform;
-        
-        sender.layer.frame = CGRectMake(originalZero.x, originalZero.y, originalSize.width, originalSize.height);
-
         sender.center = originalCenter;
-        
+        sender.layer.frame = CGRectMake(originalZero.x, originalZero.y, originalSize.width, originalSize.height);
 //        [((DBTileButton*)sender) disableShadow];
     } completion:^(BOOL finished) {
-        sender.layer.zPosition = 10000;
+//        sender.layer.zPosition = 10000;
 
     }];
 }
@@ -143,22 +140,23 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     
     originalSize = sender.layer.frame.size;
     originalZero = CGPointMake(sender.frame.origin.x, sender.frame.origin.y);
+    
     //get touch location
     UITouch *touch = [[event touchesForView:sender] anyObject];
     CGPoint location = [touch locationInView:sender];
     
     //get distance from center of button
-    CGFloat a = (sender.frame.size.width / 2.0f) - location.x;
-    CGFloat b = (sender.frame.size.height / 2.0f) - location.y;
+    CGFloat a = (originalSize.width / 2.0f) - location.x;
+    CGFloat b = (originalSize.height / 2.0f) - location.y;
     
     [self setAnchorPoint:CGPointMake(0.5f, 0.5f) forView:sender];
     
     //the 3d perspective transform
     CATransform3D transform3d;
-    
+    sender.layer.zPosition = 0;
     originalCenter = sender.center;
     
-    if (fabs(a) < sender.frame.size.width / 4.0f && fabs(b) < sender.frame.size.height / 4.0f)
+    if (fabs(a) < originalSize.width / 4.0f && fabs(b) < originalSize.height / 4.0f)
     {
         [self setAnchorPoint:CGPointMake(0.5f, 0.5f) forView:sender];
 
@@ -173,9 +171,9 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
         } completion:^(BOOL finished) {
 
         }];
-        return;
     }
-    
+    else
+    {
     //x distance is greater
     if (fabs(a) > fabs(b))
     {
@@ -202,14 +200,24 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
             transform3d = CATransform3DMakePerspective(0 , -0.0006);
         }
     }
-    
     [UIView animateWithDuration:0.2 animations:^{
         sender.layer.zPosition = 10000;
         sender.layer.transform = transform3d;
     } completion:^(BOOL finished) {
+        
     }];
+    }
 }
 
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self touchUp:self];
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self touchUp:self];
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

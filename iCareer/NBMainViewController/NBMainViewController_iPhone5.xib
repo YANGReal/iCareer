@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zMU-Dy-EZK" customClass="DBTileButton">
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zMU-Dy-EZK" customClass="DBTileButton">
                     <rect key="frame" x="5" y="414" width="152" height="72"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.9960784912109375" green="0.62745100259780884" blue="0.12941177189350128" alpha="1" colorSpace="deviceRGB"/>
@@ -31,7 +31,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1bp-1l-bTT" customClass="DBTileButton">
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1bp-1l-bTT" customClass="DBTileButton">
                     <rect key="frame" x="5" y="297" width="152" height="112"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.12941177189350128" green="0.63529413938522339" blue="0.88235300779342651" alpha="1" colorSpace="deviceRGB"/>
@@ -43,7 +43,7 @@
                         <action selector="closeKeboard:" destination="-1" eventType="touchUpInside" id="vDv-UP-vhM"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5eX-SN-A2E" customClass="DBTileButton">
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5eX-SN-A2E" customClass="DBTileButton">
                     <rect key="frame" x="162" y="297" width="153" height="112"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.39607846736907959" green="0.15686275064945221" blue="0.4901961088180542" alpha="1" colorSpace="deviceRGB"/>
@@ -55,7 +55,7 @@
                         <action selector="closeKeboard:" destination="-1" eventType="touchUpInside" id="uwP-IV-Yff"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Pd-K5-zto" customClass="DBTileButton">
+                <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Pd-K5-zto" customClass="DBTileButton">
                     <rect key="frame" x="5" y="491" width="152" height="72"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.73725491762161255" green="0.3333333432674408" blue="0.54509806632995605" alpha="1" colorSpace="deviceRGB"/>
@@ -64,7 +64,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fi3-rW-Pr3" customClass="DBTileButton">
+                <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fi3-rW-Pr3" customClass="DBTileButton">
                     <rect key="frame" x="162" y="414" width="153" height="149"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.15294118225574493" green="0.23529413342475891" blue="0.4745098352432251" alpha="1" colorSpace="deviceRGB"/>
@@ -94,7 +94,7 @@
                         <action selector="searchButtonClicked:" destination="-1" eventType="touchUpInside" id="eGC-HR-I4I"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aRn-Nq-g3o" customClass="DBTileButton">
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aRn-Nq-g3o" customClass="DBTileButton">
                     <rect key="frame" x="0.0" y="105" width="320" height="187"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.30980393290519714" blue="0.29019609093666077" alpha="1" colorSpace="deviceRGB"/>

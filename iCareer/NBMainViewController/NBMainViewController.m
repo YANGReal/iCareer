@@ -63,7 +63,6 @@
     [leftButton addTarget:self action:@selector(leftBarButtonItemClicked) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     [self.navigationItem setLeftBarButtonItem:leftItem];
-//    [self.navigationItem.leftBarButtonItem setTitlePositionAdjustment:UIOffsetMake(0, 10) forBarMetrics:UIBarMetricsDefault];
     
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [rightButton setTitle:@"登录" forState:UIControlStateNormal];
@@ -129,7 +128,6 @@
     searchBar.text = nil;
     [self closeKeboard:nil];
 }
-
 
 #pragma mark -----UIGestureRecognizerDelegate-----
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
