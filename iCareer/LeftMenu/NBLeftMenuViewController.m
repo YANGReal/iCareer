@@ -51,7 +51,7 @@
     BOOL animateTransition = self.dynamicsDrawerViewController.paneViewController != nil;
     Class paneViewControllerClass = self.viewControllers[@(paneViewControllerType)];
     UIViewController *paneViewController = [(UIViewController *)[paneViewControllerClass alloc] initWithNibName:[AppUtility getNibNameFromViewController:NSStringFromClass(paneViewControllerClass)] bundle:nil];
-    UINavigationController *paneNavigationViewController = [[UINavigationController alloc] initWithRootViewController:paneViewController];
+    NBNavigationController *paneNavigationViewController = [[NBNavigationController alloc] initWithRootViewController:paneViewController];
     [self.dynamicsDrawerViewController setPaneViewController:paneNavigationViewController animated:animateTransition completion:nil];
     self.paneViewControllerType = paneViewControllerType;
 }

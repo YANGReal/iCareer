@@ -32,7 +32,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+        NBAppDelegate *app = [UIApplication sharedApplication].delegate;
+        [app.dynamicsDrawerViewController registerTouchForwardingClass:[self.view class]];
     }
     return self;
 }

@@ -27,8 +27,11 @@
    
     [leftVC transitionToViewController:MSPaneViewControllerTypeStylers];
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
-     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    if ([[UINavigationBar appearance] respondsToSelector:@selector(setBarTintColor:)])
+    {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    }
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.dynamicsDrawerViewController;
     
     [self.window makeKeyAndVisible];

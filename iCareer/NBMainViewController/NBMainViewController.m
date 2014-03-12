@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet DBTileButton *circleButton;//圈子
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-
+//@property (strong , nonatomic) UIActivityIndicatorView *indicatorView;
 - (IBAction)closeKeboard:(id)sender;
 - (IBAction)searchButtonClicked:(UIButton *)sender;
 
@@ -30,7 +30,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+       
     }
     return self;
 }
@@ -55,12 +55,35 @@
     [titleLabel setFont:[UIFont boldSystemFontOfSize:22]];
     [self.navigationItem setTitleView:titleLabel];
 
+    UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    indicatorView.color = [UIColor colorWithHexString:@"#f5544b"];
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftButton setTitle:@"重庆" forState:UIControlStateNormal];
     [leftButton setTitleColor:[UIColor colorWithHexString:@"#f5544b"] forState:UIControlStateNormal];
-    [leftButton setFrame:RECT(0, 0, 40, 20)];
+    [leftButton setFrame:RECT(0, 0, 60, 20)];
     [leftButton setTitleEdgeInsets:UIEdgeInsetsMake(5, 0, 0, 0)];
     [leftButton addTarget:self action:@selector(leftBarButtonItemClicked) forControlEvents:UIControlEventTouchUpInside];
+    [leftButton addSubview:indicatorView];
+    [indicatorView startAnimating];
+    
+    [[NBLocationManager shareLocation] getCity:^(NSString *addressString) {
+        
+        [leftButton setTitle:addressString forState:UIControlStateNormal];
+       // DLog(@"address = %@",addressString);
+        [indicatorView stopAnimating];
+        indicatorView.hidden = YES;
+        [indicatorView removeFromSuperview];
+        
+    } error:^(NSError *error) {
+        
+        [leftButton setTitle:@"未知" forState:UIControlStateNormal];
+        [indicatorView stopAnimating];
+        indicatorView.hidden = YES;
+        [indicatorView removeFromSuperview];
+
+    }];
+    
+    
+    
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     [self.navigationItem setLeftBarButtonItem:leftItem];
 //    [self.navigationItem.leftBarButtonItem setTitlePositionAdjustment:UIOffsetMake(0, 10) forBarMetrics:UIBarMetricsDefault];
@@ -116,7 +139,7 @@
 
 - (void)rightBarButtonItemClicked
 {
-    DLog(@"this is rightItem!");
+   // DLog(@"this is rightItem!");
     NBLoginViewController *loginVC = [[NBLoginViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBLoginViewController"] bundle:nil];
     [self.navigationController pushViewController:loginVC animated:YES];
 }

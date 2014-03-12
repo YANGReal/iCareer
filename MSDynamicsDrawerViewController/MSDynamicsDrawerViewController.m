@@ -971,7 +971,7 @@ void MSDynamicsDrawerDirectionActionForMaskedValues(MSDynamicsDrawerDirection di
     static MSDynamicsDrawerDirection panDrawerDirection;
     static CGPoint panStartLocationInPane;
     static CGFloat panVelocity;
-    
+    //DLog(@"paneddddd")
     switch (gestureRecognizer.state) {
         case UIGestureRecognizerStateBegan: {
             panStartLocationInPane = [gestureRecognizer locationInView:self.paneView];
@@ -1118,8 +1118,19 @@ void MSDynamicsDrawerDirectionActionForMaskedValues(MSDynamicsDrawerDirection di
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
-    if (gestureRecognizer == self.panePanGestureRecognizer) {
-        __block BOOL shouldReceiveTouch = YES;
+    if (gestureRecognizer == self.panePanGestureRecognizer)
+    {
+        
+        
+        DLog(@"vc = %d",((UINavigationController *)self.paneViewController).viewControllers.count);
+
+        NSInteger count = ((UINavigationController *)self.paneViewController).viewControllers.count;
+        if (count<2)
+        {
+            return YES;
+        }
+        return NO;
+               __block BOOL shouldReceiveTouch = YES;
         // Enumerate the view's superviews, checking for a touch-forwarding class
         [touch.view superviewHierarchyAction:^(UIView *view) {
             // Only enumerate while still receiving the touch
@@ -1128,16 +1139,21 @@ void MSDynamicsDrawerDirectionActionForMaskedValues(MSDynamicsDrawerDirection di
             }
             // If the touch was in a touch forwarding view, don't handle the gesture
             [self.touchForwardingClasses enumerateObjectsUsingBlock:^(Class touchForwardingClass, BOOL *stop) {
-                if ([view isKindOfClass:touchForwardingClass]) {
+                if ([view isKindOfClass:touchForwardingClass])
+                {
+                    
                     shouldReceiveTouch = NO;
                     *stop = YES;
                 }
             }];
         }];
         return shouldReceiveTouch;
-    } else if (gestureRecognizer == self.paneTapGestureRecognizer) {
+    }
+    else if(gestureRecognizer == self.paneTapGestureRecognizer)
+    {
         MSDynamicsDrawerPaneState paneState;
-        if ([self paneViewIsPositionedInState:&paneState]) {
+        if ([self paneViewIsPositionedInState:&paneState])
+        {
             return (paneState != MSDynamicsDrawerPaneStateClosed);
         }
     }
