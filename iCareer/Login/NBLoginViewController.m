@@ -8,8 +8,9 @@
 
 #import "NBLoginViewController.h"
 #import "NBFindPWViewController.h"
-@interface NBLoginViewController ()<UITextFieldDelegate,UIActionSheetDelegate>
+#import "NBRegisterViewController.h"
 
+@interface NBLoginViewController ()<UITextFieldDelegate,UIActionSheetDelegate>
 
 @property (weak , nonatomic) IBOutlet UITextField *userField;
 @property (weak , nonatomic) IBOutlet UITextField *passwordField;
@@ -103,7 +104,8 @@
 
 - (IBAction)registerBtnClciked:(id)sender
 {
-    
+    NBRegisterViewController *registerVC = [[NBRegisterViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBRegisterViewController"] bundle:nil];
+    [self.navigationController pushViewController:registerVC animated:YES];
 }
 
 

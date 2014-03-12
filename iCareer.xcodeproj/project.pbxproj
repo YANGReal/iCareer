@@ -61,6 +61,9 @@
 		14F59E7118CF0F4E004CD0BB /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E6E18CF0F4E004CD0BB /* mail.png */; };
 		14F59E7218CF0F4E004CD0BB /* sms.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E6F18CF0F4E004CD0BB /* sms.png */; };
 		14F59E7318CF0F4E004CD0BB /* textField2.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E7018CF0F4E004CD0BB /* textField2.png */; };
+		A11BD12E18D0057B0067F09B /* NBRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11BD12C18D0057B0067F09B /* NBRegisterViewController.m */; };
+		A11BD12F18D0057B0067F09B /* NBRegisterViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11BD12D18D0057B0067F09B /* NBRegisterViewController_iPhone4.xib */; };
+		A1BF630918D008090006B2D0 /* NBRegisterViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BF630818D008090006B2D0 /* NBRegisterViewController_iPhone5.xib */; };
 		A1DFF04818BEEAEE00C3EE6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04718BEEAEE00C3EE6B /* Foundation.framework */; };
 		A1DFF04A18BEEAEE00C3EE6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04918BEEAEE00C3EE6B /* CoreGraphics.framework */; };
 		A1DFF04C18BEEAEE00C3EE6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DFF04B18BEEAEE00C3EE6B /* UIKit.framework */; };
@@ -180,6 +183,10 @@
 		14F59E6E18CF0F4E004CD0BB /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		14F59E6F18CF0F4E004CD0BB /* sms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sms.png; sourceTree = "<group>"; };
 		14F59E7018CF0F4E004CD0BB /* textField2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textField2.png; sourceTree = "<group>"; };
+		A11BD12B18D0057B0067F09B /* NBRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBRegisterViewController.h; path = Register/NBRegisterViewController.h; sourceTree = "<group>"; };
+		A11BD12C18D0057B0067F09B /* NBRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBRegisterViewController.m; path = Register/NBRegisterViewController.m; sourceTree = "<group>"; };
+		A11BD12D18D0057B0067F09B /* NBRegisterViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBRegisterViewController_iPhone4.xib; path = Register/NBRegisterViewController_iPhone4.xib; sourceTree = "<group>"; };
+		A1BF630818D008090006B2D0 /* NBRegisterViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBRegisterViewController_iPhone5.xib; path = Register/NBRegisterViewController_iPhone5.xib; sourceTree = "<group>"; };
 		A1DFF04418BEEAEE00C3EE6B /* iCareer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCareer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DFF04718BEEAEE00C3EE6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1DFF04918BEEAEE00C3EE6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -431,8 +438,8 @@
 			children = (
 				14F59E4618CEDC0B004CD0BB /* NBLoginViewController.h */,
 				14F59E4718CEDC0B004CD0BB /* NBLoginViewController.m */,
-				14F59E4818CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib */,
 				14F59E4C18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib */,
+				14F59E4818CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib */,
 			);
 			name = "登陆";
 			sourceTree = "<group>";
@@ -492,6 +499,17 @@
 			path = FindPassword;
 			sourceTree = "<group>";
 		};
+		A11BD13018D0058E0067F09B /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				A11BD12B18D0057B0067F09B /* NBRegisterViewController.h */,
+				A11BD12C18D0057B0067F09B /* NBRegisterViewController.m */,
+				A11BD12D18D0057B0067F09B /* NBRegisterViewController_iPhone4.xib */,
+				A1BF630818D008090006B2D0 /* NBRegisterViewController_iPhone5.xib */,
+			);
+			name = "注册";
+			sourceTree = "<group>";
+		};
 		A1DFF03B18BEEAEE00C3EE6B = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +561,7 @@
 				140C837B18BF241200BF65AB /* NBBaseViewController */,
 				140C838418BF25AB00BF65AB /* 主界面 */,
 				14F59E4B18CEDC1E004CD0BB /* 登陆 */,
+				A11BD13018D0058E0067F09B /* 注册 */,
 				14F59E6A18CF0485004CD0BB /* 找回密码 */,
 				A1DFF04E18BEEAEE00C3EE6B /* Supporting Files */,
 			);
@@ -675,6 +694,8 @@
 				14F59E7218CF0F4E004CD0BB /* sms.png in Resources */,
 				14F59E5118CEDE23004CD0BB /* textField.png in Resources */,
 				A1DFF05218BEEAEE00C3EE6B /* InfoPlist.strings in Resources */,
+				A1BF630918D008090006B2D0 /* NBRegisterViewController_iPhone5.xib in Resources */,
+				A11BD12F18D0057B0067F09B /* NBRegisterViewController_iPhone4.xib in Resources */,
 				14F59E6418CEFD7B004CD0BB /* back.png in Resources */,
 				A1DFF05A18BEEAEE00C3EE6B /* Images.xcassets in Resources */,
 				14F59E4A18CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib in Resources */,
@@ -700,6 +721,7 @@
 				140C831E18BF0B2100BF65AB /* AFURLConnectionOperation.m in Sources */,
 				14F59E6818CF0480004CD0BB /* NBFindPWViewController.m in Sources */,
 				140C830218BF0B1A00BF65AB /* UIProgressView+AFNetworking.m in Sources */,
+				A11BD12E18D0057B0067F09B /* NBRegisterViewController.m in Sources */,
 				140C831D18BF0B2100BF65AB /* AFSecurityPolicy.m in Sources */,
 				A1DFF05818BEEAEE00C3EE6B /* NBAppDelegate.m in Sources */,
 				140C831A18BF0B2100BF65AB /* AFHTTPRequestOperationManager.m in Sources */,
@@ -853,7 +875,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -870,7 +892,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
