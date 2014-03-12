@@ -7,23 +7,35 @@
 //
 
 #import "NBAppDelegate.h"
-
+#import "NBLeftMenuViewController.h"
 @implementation NBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    self.dynamicsDrawerViewController = [[MSDynamicsDrawerViewController alloc] init];
+    [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
+    
+    NBLeftMenuViewController *leftVC = [[NBLeftMenuViewController alloc] initWithNibName:@"NBLeftMenuViewController" bundle:nil];
+    leftVC.dynamicsDrawerViewController = self.dynamicsDrawerViewController;
+    [self.dynamicsDrawerViewController setDrawerViewController:leftVC forDirection:MSDynamicsDrawerDirectionLeft];
+    //self.window.backgroundColor = [UIColor redColor];
+    //NSString *nibName = [AppUtility getNibNameFromViewController:@"NBMainViewController"];
+    //self.mainVC = [[NBMainViewController alloc] initWithNibName:nibName bundle:nil];
+    //UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
+    
+   
+    [leftVC transitionToViewController:MSPaneViewControllerTypeStylers];
+    
+    if ([[UINavigationBar appearance] respondsToSelector:@selector(setBarTintColor:)])
+    {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    }
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    NSString *nibName = [AppUtility getNibNameFromViewController:@"NBMainViewController"];
-    self.mainVC = [[NBMainViewController alloc] initWithNibName:nibName bundle:nil];
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
-    self.window.rootViewController = navVC;
+    self.window.rootViewController = self.dynamicsDrawerViewController;
+    
     [self.window makeKeyAndVisible];
-    //This is create by Andy
-    //123
+  
     return YES;
 }
 

@@ -64,5 +64,16 @@
 #pragma mark - 把图片分割成两半
 + (NSArray *)splitImageIntoTwoParts:(UIImage *)image;
 
+#pragma mark -模糊化图片 
+//0.0-1.0
+- (UIImage *)blurredImage:(CGFloat)blurAmount;
+
+#pragma mark - 截屏
++ (UIImage *)screenshot;
+
+
+
+
+
 
 @end

@@ -12,4 +12,5 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong , nonatomic) NBMainViewController *mainVC;
+@property (strong , nonatomic) MSDynamicsDrawerViewController *dynamicsDrawerViewController;
 @end

@@ -32,7 +32,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+        NBAppDelegate *app = [UIApplication sharedApplication].delegate;
+        [app.dynamicsDrawerViewController registerTouchForwardingClass:[self.view class]];
     }
     return self;
 }
@@ -73,7 +74,7 @@
 
 - (IBAction)loginBtnClicked:(id)sender
 {
-    
+    [self checkInput];
 }
 
 - (IBAction)checkBtnClicked:(id)sender
@@ -113,10 +114,14 @@
 {
     if (self.userField.text.length == 0)
     {
+        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"请输入用户名"];
+        [alert show];
         return NO;
     }
     if (self.passwordField.text.length ==0)
     {
+        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"请输入密码"];
+        [alert show];
         return NO;
     }
     return YES;
@@ -131,10 +136,12 @@
     }
     else
     {
+        [textField resignFirstResponder];
         if ([self checkInput])
         {
             
         }
+        
     }
     return YES;
 }
