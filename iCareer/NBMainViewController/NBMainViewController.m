@@ -46,6 +46,8 @@
     
     [self setupUIBarButtonItem];
     [self setupUISearchBar];
+    
+    [self.chanceButton addTarget:self action:@selector(closeKeboard:) forControlEvents:UIControlEventTouchUpOutside];
 }
 
 - (void)setupUIBarButtonItem
@@ -115,6 +117,7 @@
 
 - (IBAction)closeKeboard:(id)sender
 {
+    DLog(@"yes");
     [self.searchBar resignFirstResponder];
 }
 
@@ -157,7 +160,7 @@
 {
     if (self.navigationController.viewControllers.count == 1)
     {
-        return NO;
+            return NO;
     }
     return YES;
 }

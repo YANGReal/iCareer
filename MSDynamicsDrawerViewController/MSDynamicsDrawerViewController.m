@@ -1121,8 +1121,8 @@ void MSDynamicsDrawerDirectionActionForMaskedValues(MSDynamicsDrawerDirection di
     if (gestureRecognizer == self.panePanGestureRecognizer)
     {
         
-        
-        DLog(@"vc = %d",((UINavigationController *)self.paneViewController).viewControllers.count);
+     
+      //  DLog(@"vc = %d",((UINavigationController *)self.paneViewController).viewControllers.count);
 
         NSInteger count = ((UINavigationController *)self.paneViewController).viewControllers.count;
         if (count<2)

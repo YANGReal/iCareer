@@ -81,7 +81,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     //[self enableShadow];
     
     [self addTarget:self action:@selector(touchDown:forEvent:) forControlEvents:UIControlEventTouchDown];
-//    [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
+    [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
 }
 
 -(void) enableShadow {
@@ -100,6 +100,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
 -(void) disableShadow {
     self.layer.shadowColor = [UIColor clearColor].CGColor;
 }
+
 
 -(void)setAnchorPoint:(CGPoint)anchorPoint forView:(UIView *)view
 {
@@ -207,11 +208,6 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
         
     }];
     }
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [self touchUp:self];
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event

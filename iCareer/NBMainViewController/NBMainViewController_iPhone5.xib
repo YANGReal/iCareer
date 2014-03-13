@@ -40,7 +40,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="closeKeboard:" destination="-1" eventType="touchUpInside" id="vDv-UP-vhM"/>
+                        <action selector="closeKeboard:" destination="-1" eventType="touchUpInside" id="naE-2X-h3j"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5eX-SN-A2E" customClass="DBTileButton">
@@ -52,7 +52,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="closeKeboard:" destination="-1" eventType="touchUpInside" id="uwP-IV-Yff"/>
+                        <action selector="closeKeboard:" destination="-1" eventType="touchUpInside" id="InQ-uE-ItQ"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Pd-K5-zto" customClass="DBTileButton">
@@ -103,7 +103,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="closeKeboard:" destination="-1" eventType="touchUpInside" id="4ru-99-PYU"/>
+                        <action selector="closeKeboard:" destination="-1" eventType="touchUpInside" id="MpJ-gI-m6I"/>
                     </connections>
                 </button>
             </subviews>

@@ -10,6 +10,14 @@
 
 @interface NBRegisterViewController ()
 
+@property (nonatomic, weak) IBOutlet UITextField *accountField;
+@property (nonatomic, weak) IBOutlet UITextField *verificationField;
+@property (nonatomic, weak) IBOutlet UITextField *passwordField;
+@property (nonatomic, weak) IBOutlet UIButton *phoneButton;
+@property (nonatomic, weak) IBOutlet UIButton *mailButton;
+@property (nonatomic, weak) IBOutlet UIButton *verificationButton;
+@property (nonatomic, weak) IBOutlet UIButton *registerButton;
+
 @end
 
 @implementation NBRegisterViewController
