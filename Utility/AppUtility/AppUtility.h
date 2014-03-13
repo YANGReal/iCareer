@@ -43,4 +43,9 @@
 /*获取字符串的MD5值*/
 + (NSString *)md5String:(NSString *)str;
 
+/*判断网络是否可用*/
++ (BOOL)isNetworkAvaliable;
+
+
+
 @end

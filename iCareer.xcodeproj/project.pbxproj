@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14073C7118D173CA001C5E86 /* NBResetPWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14073C6F18D173CA001C5E86 /* NBResetPWViewController.m */; };
+		14073C7218D173CA001C5E86 /* NBResetPWViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14073C7018D173CA001C5E86 /* NBResetPWViewController_iPhone5.xib */; };
+		14073C7518D17421001C5E86 /* NBResetPWViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14073C7418D17421001C5E86 /* NBResetPWViewController_iPhone4.xib */; };
+		14073C7918D17785001C5E86 /* NBCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14073C7718D17785001C5E86 /* NBCityViewController.m */; };
+		14073C7A18D17785001C5E86 /* NBCityViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14073C7818D17785001C5E86 /* NBCityViewController_iPhone5.xib */; };
+		14073C7D18D177DB001C5E86 /* NBCityViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14073C7C18D177DB001C5E86 /* NBCityViewController_iPhone4.xib */; };
+		14073C8018D17BE1001C5E86 /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14073C7F18D17BE1001C5E86 /* citydict.plist */; };
+		14073C8418D192ED001C5E86 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 14073C8318D192ED001C5E86 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		14088A4618C842200098A404 /* DBTileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14088A4518C842200098A404 /* DBTileButton.m */; };
 		14088A4918C8434B0098A404 /* AppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 14088A4818C8434B0098A404 /* AppUtility.m */; };
 		14088A4C18C844D30098A404 /* NBMainViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14088A4B18C844D30098A404 /* NBMainViewController_iPhone5.xib */; };
@@ -104,6 +112,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14073C6E18D173CA001C5E86 /* NBResetPWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBResetPWViewController.h; path = ResetPassword/NBResetPWViewController.h; sourceTree = "<group>"; };
+		14073C6F18D173CA001C5E86 /* NBResetPWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBResetPWViewController.m; path = ResetPassword/NBResetPWViewController.m; sourceTree = "<group>"; };
+		14073C7018D173CA001C5E86 /* NBResetPWViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBResetPWViewController_iPhone5.xib; path = ResetPassword/NBResetPWViewController_iPhone5.xib; sourceTree = "<group>"; };
+		14073C7418D17421001C5E86 /* NBResetPWViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBResetPWViewController_iPhone4.xib; path = ResetPassword/NBResetPWViewController_iPhone4.xib; sourceTree = "<group>"; };
+		14073C7618D17785001C5E86 /* NBCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBCityViewController.h; path = CityViewController/NBCityViewController.h; sourceTree = "<group>"; };
+		14073C7718D17785001C5E86 /* NBCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBCityViewController.m; path = CityViewController/NBCityViewController.m; sourceTree = "<group>"; };
+		14073C7818D17785001C5E86 /* NBCityViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBCityViewController_iPhone5.xib; path = CityViewController/NBCityViewController_iPhone5.xib; sourceTree = "<group>"; };
+		14073C7C18D177DB001C5E86 /* NBCityViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBCityViewController_iPhone4.xib; path = CityViewController/NBCityViewController_iPhone4.xib; sourceTree = "<group>"; };
+		14073C7F18D17BE1001C5E86 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		14073C8218D192ED001C5E86 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		14073C8318D192ED001C5E86 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		14088A4418C842200098A404 /* DBTileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTileButton.h; sourceTree = "<group>"; };
 		14088A4518C842200098A404 /* DBTileButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTileButton.m; sourceTree = "<group>"; };
 		14088A4718C8434B0098A404 /* AppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppUtility.h; path = AppUtility/AppUtility.h; sourceTree = "<group>"; };
@@ -270,6 +289,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14073C7318D173D3001C5E86 /* 重设密码 */ = {
+			isa = PBXGroup;
+			children = (
+				14073C6E18D173CA001C5E86 /* NBResetPWViewController.h */,
+				14073C6F18D173CA001C5E86 /* NBResetPWViewController.m */,
+				14073C7018D173CA001C5E86 /* NBResetPWViewController_iPhone5.xib */,
+				14073C7418D17421001C5E86 /* NBResetPWViewController_iPhone4.xib */,
+			);
+			name = "重设密码";
+			sourceTree = "<group>";
+		};
+		14073C7B18D1778C001C5E86 /* 城市 */ = {
+			isa = PBXGroup;
+			children = (
+				14073C7618D17785001C5E86 /* NBCityViewController.h */,
+				14073C7718D17785001C5E86 /* NBCityViewController.m */,
+				14073C7818D17785001C5E86 /* NBCityViewController_iPhone5.xib */,
+				14073C7C18D177DB001C5E86 /* NBCityViewController_iPhone4.xib */,
+			);
+			name = "城市";
+			sourceTree = "<group>";
+		};
+		14073C7E18D17BE1001C5E86 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				14073C7F18D17BE1001C5E86 /* citydict.plist */,
+			);
+			name = Source;
+			path = UI/Source;
+			sourceTree = "<group>";
+		};
+		14073C8118D192ED001C5E86 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				14073C8218D192ED001C5E86 /* Reachability.h */,
+				14073C8318D192ED001C5E86 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = "UIView+ModifyFrame/Reachability";
+			sourceTree = "<group>";
+		};
 		14088A4318C842200098A404 /* DBTileButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +424,7 @@
 				140C836418BF226E00BF65AB /* UIImage+Loader */,
 				140C836718BF226E00BF65AB /* UIView+Border */,
 				140C836A18BF226E00BF65AB /* UIView+Joggle */,
+				14073C8118D192ED001C5E86 /* Reachability */,
 				140C836D18BF226E00BF65AB /* UIView+ModifyFrame */,
 			);
 			path = Utility;
@@ -614,6 +675,7 @@
 				A1DFF06618BEEAEE00C3EE6B /* iCareerTests */,
 				140C82EA18BF0AF600BF65AB /* ThirdPartLibrary */,
 				140C835618BF226E00BF65AB /* Utility */,
+				14073C7E18D17BE1001C5E86 /* Source */,
 				14F59E4E18CEDE23004CD0BB /* UI */,
 				A1DFF04618BEEAEE00C3EE6B /* Frameworks */,
 				A1DFF04518BEEAEE00C3EE6B /* Products */,
@@ -661,6 +723,8 @@
 				14F59E4B18CEDC1E004CD0BB /* 登陆 */,
 				A11BD13018D0058E0067F09B /* 注册 */,
 				14F59E6A18CF0485004CD0BB /* 找回密码 */,
+				14073C7318D173D3001C5E86 /* 重设密码 */,
+				14073C7B18D1778C001C5E86 /* 城市 */,
 				A1DFF04E18BEEAEE00C3EE6B /* Supporting Files */,
 			);
 			path = iCareer;
@@ -777,12 +841,15 @@
 			files = (
 				14F59E5F18CEE39B004CD0BB /* qq.png in Resources */,
 				14F59E5818CEE1BE004CD0BB /* checkBox.png in Resources */,
+				14073C7218D173CA001C5E86 /* NBResetPWViewController_iPhone5.xib in Resources */,
+				14073C7A18D17785001C5E86 /* NBCityViewController_iPhone5.xib in Resources */,
 				14F59E5718CEE1BE004CD0BB /* check.png in Resources */,
 				14F59E4D18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib in Resources */,
 				A186EE7E18D066150095B657 /* NZAlertView-Icons.bundle in Resources */,
 				14F59E5918CEE1BE004CD0BB /* loginBtn.png in Resources */,
 				14F59E6118CEE39B004CD0BB /* weibo.png in Resources */,
 				14088A4C18C844D30098A404 /* NBMainViewController_iPhone5.xib in Resources */,
+				14073C7D18D177DB001C5E86 /* NBCityViewController_iPhone4.xib in Resources */,
 				14F59E6918CF0480004CD0BB /* NBFindPWViewController_iPhone5.xib in Resources */,
 				A186EE8018D066150095B657 /* NZAlertView.xib in Resources */,
 				14F59E5318CEDFC9004CD0BB /* peple.png in Resources */,
@@ -792,7 +859,9 @@
 				14F59E6C18CF04DA004CD0BB /* NBFindPWViewController_iPhone4.xib in Resources */,
 				140C838918BF25AB00BF65AB /* NBMainViewController_iPhone4.xib in Resources */,
 				14F59E7118CF0F4E004CD0BB /* mail.png in Resources */,
+				14073C8018D17BE1001C5E86 /* citydict.plist in Resources */,
 				14F59E7218CF0F4E004CD0BB /* sms.png in Resources */,
+				14073C7518D17421001C5E86 /* NBResetPWViewController_iPhone4.xib in Resources */,
 				14F59E5118CEDE23004CD0BB /* textField.png in Resources */,
 				A1DFF05218BEEAEE00C3EE6B /* InfoPlist.strings in Resources */,
 				A1BF630918D008090006B2D0 /* NBRegisterViewController_iPhone5.xib in Resources */,
@@ -838,6 +907,7 @@
 				A186EE8718D0662C0095B657 /* MSDynamicsDrawerViewController.m in Sources */,
 				140C837E18BF241200BF65AB /* NBBaseViewController.m in Sources */,
 				140C832018BF0B2100BF65AB /* AFURLResponseSerialization.m in Sources */,
+				14073C7918D17785001C5E86 /* NBCityViewController.m in Sources */,
 				140C82FD18BF0B1A00BF65AB /* AFNetworkActivityIndicatorManager.m in Sources */,
 				140C830118BF0B1A00BF65AB /* UIImageView+AFNetworking.m in Sources */,
 				140C837218BF226E00BF65AB /* RegexKitLite.m in Sources */,
@@ -847,11 +917,13 @@
 				A186EE8F18D066660095B657 /* MMLocationManager.m in Sources */,
 				140C837018BF226E00BF65AB /* NBNetworkEngine.m in Sources */,
 				140C837718BF226E00BF65AB /* UIView+ModifyFrame.m in Sources */,
+				14073C8418D192ED001C5E86 /* Reachability.m in Sources */,
 				A186EE8B18D0664B0095B657 /* NBNavigationController.m in Sources */,
 				140C837618BF226E00BF65AB /* UIView+Joggle.m in Sources */,
 				140C837318BF226E00BF65AB /* UIColor+HexString.m in Sources */,
 				140C837118BF226E00BF65AB /* NSDictionary+JSON.m in Sources */,
 				140C82FF18BF0B1A00BF65AB /* UIAlertView+AFNetworking.m in Sources */,
+				14073C7118D173CA001C5E86 /* NBResetPWViewController.m in Sources */,
 				14F59E4918CEDC0B004CD0BB /* NBLoginViewController.m in Sources */,
 				140C837518BF226E00BF65AB /* UIView+Border.m in Sources */,
 				140C831918BF0B2100BF65AB /* AFHTTPRequestOperation.m in Sources */,
@@ -977,12 +1049,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -994,12 +1066,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

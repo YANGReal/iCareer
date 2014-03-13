@@ -50,6 +50,20 @@
 #define NAV_HEIGHT 64
 
 
+/*********************
+ 常用颜色
+ *********************/
+#define WHITE_COLOR   [UIColor whiteColor]                    //白色
+#define BLACK_COLOR   [UIColor blackColor]                    //黑色
+#define CLEAR_COLOR   [UIColor clearColor]                    //透明色
+#define DEEP_BLUE     [UIColor colorWithHexString:@"#2c4484"] //深蓝色
+#define LIGHT_BLUE    [UIColor colorWithHexString:@"#26ace5"] //浅蓝色
+#define DEEP_PURPLE   [UIColor colorWithHexString:@"#702d88"] //深紫色
+#define LIGHT_PURPLE  [UIColor colorWithHexString:@"#c46096"] //浅紫色
+#define YELLOW_COLOR  [UIColor colorWithHexString:@"#feaa24"] //明黄色
+#define RED_COLOR     [UIColor colorWithHexString:@"#ff5a54"] //粉红色
+
+
 #pragma mark -- 定义APP沙盒路径
 /******************************
  定义APP沙盒路径

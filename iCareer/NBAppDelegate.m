@@ -12,19 +12,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+  
     self.dynamicsDrawerViewController = [[MSDynamicsDrawerViewController alloc] init];
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
     
     NBLeftMenuViewController *leftVC = [[NBLeftMenuViewController alloc] initWithNibName:@"NBLeftMenuViewController" bundle:nil];
     leftVC.dynamicsDrawerViewController = self.dynamicsDrawerViewController;
     [self.dynamicsDrawerViewController setDrawerViewController:leftVC forDirection:MSDynamicsDrawerDirectionLeft];
-    //self.window.backgroundColor = [UIColor redColor];
-    //NSString *nibName = [AppUtility getNibNameFromViewController:@"NBMainViewController"];
-    //self.mainVC = [[NBMainViewController alloc] initWithNibName:nibName bundle:nil];
-    //UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
-    
-   
+      
     [leftVC transitionToViewController:MSPaneViewControllerTypeStylers];
     
     if ([[UINavigationBar appearance] respondsToSelector:@selector(setBarTintColor:)])
@@ -35,7 +30,7 @@
     self.window.rootViewController = self.dynamicsDrawerViewController;
     
     [self.window makeKeyAndVisible];
-  
+    [AppUtility isNetworkAvaliable];
     return YES;
 }
 
@@ -54,6 +49,9 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [AppUtility isNetworkAvaliable];
+   
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -65,5 +63,8 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
 
 @end

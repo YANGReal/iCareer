@@ -1,9 +1,9 @@
 //
 //  UIVew+Border.h
-//  sayburg
+//
 //
 //  Created by YANGReal on 13-9-21.
-//  Copyright (c) 2013年 somilk. All rights reserved.
+//  Copyright (c) 2013年 YANGReal. All rights reserved.
 //
 
 

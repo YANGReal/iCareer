@@ -7,7 +7,7 @@
 //
 
 #import "NBMainViewController.h"
-
+#import "NBCityViewController.h"
 @interface NBMainViewController ()<UIGestureRecognizerDelegate, UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet DBTileButton *chanceButton;//机会
@@ -136,7 +136,10 @@
 #pragma mark -----UIBarButtonItemAction-----
 - (void)leftBarButtonItemClicked
 {
-    DLog(@"this is leftItem!");
+    //DLog(@"this is leftItem!");
+    NBCityViewController *cityVC = [[NBCityViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBCityViewController"] bundle:nil];
+    cityVC.currentCity = @"重庆市";
+    [self.navigationController pushViewController:cityVC animated:YES];
 }
 
 - (void)rightBarButtonItemClicked

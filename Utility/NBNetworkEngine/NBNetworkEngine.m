@@ -14,8 +14,11 @@
 
 + (void)loadDataWithURL:(NSString *)url params:(NSDictionary *)params completeHander:(CompleteHander)callBack
 {
+    if (![AppUtility isNetworkAvaliable])
+    {
+        return ;
+    }
     url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    
     if (params == nil||params.count <= 0)
     {
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];

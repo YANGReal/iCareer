@@ -45,7 +45,7 @@
         self.interactivePopGestureRecognizer.enabled = NO;
        
     }
-     [super pushViewController:viewController animated:YES];
+     [super pushViewController:viewController animated:animated];
 
 }
 

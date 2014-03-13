@@ -8,6 +8,7 @@
 
 #import "AppUtility.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "Reachability.h"
 @implementation AppUtility
 
 + (NSString *)getNibNameFromViewController:(NSString *)vc
@@ -123,6 +124,18 @@
     }
     
     return result;
+}
+
+#pragma mark - 检查网络连接
++ (BOOL)isNetworkAvaliable
+{
+     BOOL avaliable = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus]!=NotReachable;
+    if (!avaliable)
+    {
+        NZAlertView *alert = [[NZAlertView alloc] initWithStyle:NZAlertStyleError title:@"提示" message:@"当前无网络,请检查网络连接是否正常"];
+        [alert show];
+    }
+    return avaliable;
 }
 
 
