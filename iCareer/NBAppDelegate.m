@@ -20,7 +20,7 @@
     leftVC.dynamicsDrawerViewController = self.dynamicsDrawerViewController;
     [self.dynamicsDrawerViewController setDrawerViewController:leftVC forDirection:MSDynamicsDrawerDirectionLeft];
       
-    [leftVC transitionToViewController:MSPaneViewControllerTypeStylers];
+    [leftVC transitionToViewController:MainViewController];
     
     if ([[UINavigationBar appearance] respondsToSelector:@selector(setBarTintColor:)])
     {

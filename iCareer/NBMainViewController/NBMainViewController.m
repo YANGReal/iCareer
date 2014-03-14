@@ -48,6 +48,13 @@
     [self setupUISearchBar];
     
     [self.chanceButton addTarget:self action:@selector(closeKeboard:) forControlEvents:UIControlEventTouchUpOutside];
+    
+    /*
+    ETActivityIndicatorView *indicator = [[ETActivityIndicatorView alloc] initWithFrame:RECT(0, 0, 60, 60) andColor:WHITE_COLOR];
+    indicator.center = self.view.center;
+    [self.view addSubview:indicator];
+    [indicator startAnimating];
+     */
 }
 
 - (void)setupUIBarButtonItem
@@ -136,7 +143,6 @@
 #pragma mark -----UIBarButtonItemAction-----
 - (void)leftBarButtonItemClicked
 {
-    //DLog(@"this is leftItem!");
     NBCityViewController *cityVC = [[NBCityViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBCityViewController"] bundle:nil];
     cityVC.currentCity = @"重庆市";
     [self.navigationController pushViewController:cityVC animated:YES];
@@ -144,7 +150,7 @@
 
 - (void)rightBarButtonItemClicked
 {
-   // DLog(@"this is rightItem!");
+   
     NBLoginViewController *loginVC = [[NBLoginViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBLoginViewController"] bundle:nil];
     [self.navigationController pushViewController:loginVC animated:YES];
 }

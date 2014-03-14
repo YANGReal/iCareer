@@ -50,6 +50,9 @@
 		140C837E18BF241200BF65AB /* NBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C837D18BF241200BF65AB /* NBBaseViewController.m */; };
 		140C838818BF25AB00BF65AB /* NBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C838618BF25AB00BF65AB /* NBMainViewController.m */; };
 		140C838918BF25AB00BF65AB /* NBMainViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */; };
+		14AAAD8E18D2994600583D59 /* DXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAAD8D18D2994600583D59 /* DXAlertView.m */; };
+		14AAAD9418D2A23400583D59 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAAD9118D2A23300583D59 /* Circle.m */; };
+		14AAAD9518D2A23400583D59 /* ETActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAAD9318D2A23400583D59 /* ETActivityIndicatorView.m */; };
 		14F59E4918CEDC0B004CD0BB /* NBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F59E4718CEDC0B004CD0BB /* NBLoginViewController.m */; };
 		14F59E4A18CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E4818CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib */; };
 		14F59E4D18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E4C18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib */; };
@@ -190,6 +193,12 @@
 		140C838518BF25AB00BF65AB /* NBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMainViewController.h; sourceTree = "<group>"; };
 		140C838618BF25AB00BF65AB /* NBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMainViewController.m; sourceTree = "<group>"; };
 		140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NBMainViewController_iPhone4.xib; sourceTree = "<group>"; };
+		14AAAD8C18D2994600583D59 /* DXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXAlertView.h; sourceTree = "<group>"; };
+		14AAAD8D18D2994600583D59 /* DXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXAlertView.m; sourceTree = "<group>"; };
+		14AAAD9018D2A23300583D59 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		14AAAD9118D2A23300583D59 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		14AAAD9218D2A23400583D59 /* ETActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETActivityIndicatorView.h; sourceTree = "<group>"; };
+		14AAAD9318D2A23400583D59 /* ETActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETActivityIndicatorView.m; sourceTree = "<group>"; };
 		14F59E4618CEDC0B004CD0BB /* NBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBLoginViewController.h; path = Login/NBLoginViewController.h; sourceTree = "<group>"; };
 		14F59E4718CEDC0B004CD0BB /* NBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBLoginViewController.m; path = Login/NBLoginViewController.m; sourceTree = "<group>"; };
 		14F59E4818CEDC0B004CD0BB /* NBLoginViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBLoginViewController_iPhone5.xib; path = Login/NBLoginViewController_iPhone5.xib; sourceTree = "<group>"; };
@@ -426,6 +435,8 @@
 				140C836A18BF226E00BF65AB /* UIView+Joggle */,
 				14073C8118D192ED001C5E86 /* Reachability */,
 				140C836D18BF226E00BF65AB /* UIView+ModifyFrame */,
+				14AAAD8F18D2A23300583D59 /* ETActivityIndicatorView */,
+				14AAAD8B18D2994600583D59 /* DXAlertView */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -521,6 +532,27 @@
 			);
 			name = "主界面";
 			path = NBMainViewController;
+			sourceTree = "<group>";
+		};
+		14AAAD8B18D2994600583D59 /* DXAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				14AAAD8C18D2994600583D59 /* DXAlertView.h */,
+				14AAAD8D18D2994600583D59 /* DXAlertView.m */,
+			);
+			path = DXAlertView;
+			sourceTree = "<group>";
+		};
+		14AAAD8F18D2A23300583D59 /* ETActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				14AAAD9018D2A23300583D59 /* Circle.h */,
+				14AAAD9118D2A23300583D59 /* Circle.m */,
+				14AAAD9218D2A23400583D59 /* ETActivityIndicatorView.h */,
+				14AAAD9318D2A23400583D59 /* ETActivityIndicatorView.m */,
+			);
+			name = ETActivityIndicatorView;
+			path = DXAlertView/ETActivityIndicatorView;
 			sourceTree = "<group>";
 		};
 		14F59E4B18CEDC1E004CD0BB /* 登陆 */ = {
@@ -717,8 +749,8 @@
 			children = (
 				A1DFF05618BEEAEE00C3EE6B /* NBAppDelegate.h */,
 				A1DFF05718BEEAEE00C3EE6B /* NBAppDelegate.m */,
-				A186EE9018D066CA0095B657 /* 侧边栏 */,
 				140C837B18BF241200BF65AB /* NBBaseViewController */,
+				A186EE9018D066CA0095B657 /* 侧边栏 */,
 				140C838418BF25AB00BF65AB /* 主界面 */,
 				14F59E4B18CEDC1E004CD0BB /* 登陆 */,
 				A11BD13018D0058E0067F09B /* 注册 */,
@@ -900,6 +932,7 @@
 				140C830418BF0B1A00BF65AB /* UIWebView+AFNetworking.m in Sources */,
 				A1DFF05418BEEAEE00C3EE6B /* main.m in Sources */,
 				140C830018BF0B1A00BF65AB /* UIButton+AFNetworking.m in Sources */,
+				14AAAD9418D2A23400583D59 /* Circle.m in Sources */,
 				140C82FE18BF0B1A00BF65AB /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				14088A4918C8434B0098A404 /* AppUtility.m in Sources */,
 				140C830318BF0B1A00BF65AB /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -915,6 +948,7 @@
 				140C831C18BF0B2100BF65AB /* AFNetworkReachabilityManager.m in Sources */,
 				A186EE8618D0662C0095B657 /* MSDynamicsDrawerStyler.m in Sources */,
 				A186EE8F18D066660095B657 /* MMLocationManager.m in Sources */,
+				14AAAD8E18D2994600583D59 /* DXAlertView.m in Sources */,
 				140C837018BF226E00BF65AB /* NBNetworkEngine.m in Sources */,
 				140C837718BF226E00BF65AB /* UIView+ModifyFrame.m in Sources */,
 				14073C8418D192ED001C5E86 /* Reachability.m in Sources */,
@@ -924,6 +958,7 @@
 				140C837118BF226E00BF65AB /* NSDictionary+JSON.m in Sources */,
 				140C82FF18BF0B1A00BF65AB /* UIAlertView+AFNetworking.m in Sources */,
 				14073C7118D173CA001C5E86 /* NBResetPWViewController.m in Sources */,
+				14AAAD9518D2A23400583D59 /* ETActivityIndicatorView.m in Sources */,
 				14F59E4918CEDC0B004CD0BB /* NBLoginViewController.m in Sources */,
 				140C837518BF226E00BF65AB /* UIView+Border.m in Sources */,
 				140C831918BF0B2100BF65AB /* AFHTTPRequestOperation.m in Sources */,

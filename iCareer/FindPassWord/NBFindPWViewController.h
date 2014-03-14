@@ -16,4 +16,6 @@ typedef enum
 
 @interface NBFindPWViewController : NBBaseViewController
 @property (assign , nonatomic) PassWordFindType findType;
+
+
 @end

@@ -37,7 +37,7 @@
 - (void)initialize
 {
     self.paneViewControllerType = NSIntegerMax;
-    self.viewControllers = @{@(MSPaneViewControllerTypeStylers) : [NBMainViewController class]};
+    self.viewControllers = @{@(MainViewController) : [NBMainViewController class]};
 
 }
 
