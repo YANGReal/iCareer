@@ -9,6 +9,16 @@
 #import "NBMainViewController.h"
 #import "NBCityViewController.h"
 @interface NBMainViewController ()<UIGestureRecognizerDelegate, UISearchBarDelegate>
+{
+    IBOutlet UIImageView *changeImage;
+    IBOutlet UIImageView *jobImage;
+    IBOutlet UIImageView *searchImage;
+    IBOutlet UIImageView *recommendImage;
+    IBOutlet UIImageView *evaluatingImage;
+    IBOutlet UIImageView *resumeImage;
+    IBOutlet UIImageView *messageImage;
+    IBOutlet UIImageView *circleImage;
+}
 
 @property (weak, nonatomic) IBOutlet DBTileButton *chanceButton;//机会
 @property (weak, nonatomic) IBOutlet DBTileButton *messageButton;//消息
@@ -46,6 +56,7 @@
     
     [self setupUIBarButtonItem];
     [self setupUISearchBar];
+    [self setupButton];
     
     [self.chanceButton addTarget:self action:@selector(closeKeboard:) forControlEvents:UIControlEventTouchUpOutside];
     
@@ -91,8 +102,6 @@
 
     }];
     
-    
-    
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     [self.navigationItem setLeftBarButtonItem:leftItem];
     
@@ -118,6 +127,37 @@
     UITextField *searchField = [_searchBar valueForKey:@"_searchField"];
     searchField.textColor = [UIColor whiteColor];
     [searchField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+}
+
+- (void)setupButton
+{
+    changeImage.x = 30;
+    changeImage.y = 30;
+    [self.chanceButton addSubview:changeImage];
+    
+    jobImage.x = 120;
+    jobImage.y = 125;
+    [self.chanceButton addSubview:jobImage];
+    
+    messageImage.x = 15;
+    messageImage.y = 15;
+    [self.messageButton addSubview:messageImage];
+    
+    resumeImage.x = 15;
+    resumeImage.y = 15;
+    [self.resumeButton addSubview:resumeImage];
+    
+    evaluatingImage.x = 15;
+    evaluatingImage.y = 15;
+    [self.evaluatingButton addSubview:evaluatingImage];
+    
+    recommendImage.x = 15;
+    recommendImage.y = 15;
+    [self.recommendButton addSubview:recommendImage];
+    
+    circleImage.x = 50;
+    circleImage.y = 25;
+    [self.circleButton addSubview:circleImage];
 }
 
 #pragma mark -----各个button相应方法-----

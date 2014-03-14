@@ -9,7 +9,9 @@
 #import "NBRegisterViewController.h"
 
 @interface NBRegisterViewController ()
-
+{
+    UIView *aView;
+}
 @property (nonatomic, weak) IBOutlet UITextField *accountField;
 @property (nonatomic, weak) IBOutlet UITextField *verificationField;
 @property (nonatomic, weak) IBOutlet UITextField *passwordField;
@@ -17,6 +19,10 @@
 @property (nonatomic, weak) IBOutlet UIButton *mailButton;
 @property (nonatomic, weak) IBOutlet UIButton *verificationButton;
 @property (nonatomic, weak) IBOutlet UIButton *registerButton;
+@property (nonatomic, weak) IBOutlet UIView *mailView;
+
+- (IBAction)mailButtonClicked:(id)sender;
+- (IBAction)phoneButtonClicked:(id)sender;
 
 @end
 
@@ -40,7 +46,32 @@
     [titleLabel setText:@"注册账号"];
     [titleLabel setFont:[UIFont boldSystemFontOfSize:22]];
     [self.navigationItem setTitleView:titleLabel];
+    [self.view addSubview:_mailView];
+    [self.mailView setHidden:YES];
+    
+    UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClicked)];
+    [self.mailView addGestureRecognizer:tapGR];
+    [self.view addGestureRecognizer:tapGR];
 }
+
+#pragma mark *****ButtonClicked*****
+
+- (void)viewClicked
+{
+    [self.view endEditing:YES];
+    [self.mailView endEditing:YES];
+}
+- (IBAction)phoneButtonClicked:(id)sender
+{
+    [self.mailView setHidden:YES];
+}
+
+- (IBAction)mailButtonClicked:(id)sender
+{
+    [self.mailView setHidden:NO];
+}
+
+#pragma mark *****UITextFieldDelegate*****
 
 - (void)didReceiveMemoryWarning
 {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -7,13 +7,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NBMainViewController">
             <connections>
                 <outlet property="chanceButton" destination="aRn-Nq-g3o" id="xY5-Pg-2FN"/>
+                <outlet property="changeImage" destination="nMC-j8-PDb" id="Yog-aS-Nb4"/>
                 <outlet property="circleButton" destination="fi3-rW-Pr3" id="iKE-SI-qqe"/>
+                <outlet property="circleImage" destination="VOV-3x-vUR" id="O5h-EP-cc1"/>
                 <outlet property="evaluatingButton" destination="1Pd-K5-zto" id="kaV-hl-wv1"/>
+                <outlet property="evaluatingImage" destination="I3F-JP-c2R" id="kS2-Ld-vQA"/>
+                <outlet property="jobImage" destination="Q9d-YC-AXY" id="9mU-C0-cll"/>
                 <outlet property="messageButton" destination="1bp-1l-bTT" id="ZtA-vR-5lI"/>
-                <outlet property="recommendButton" destination="zMU-Dy-EZK" id="Udg-fi-T0a"/>
+                <outlet property="messageImage" destination="24d-O7-tW5" id="Xuo-LW-ySX"/>
+                <outlet property="recommendButton" destination="zMU-Dy-EZK" id="sNr-Wp-nuY"/>
+                <outlet property="recommendImage" destination="040-aQ-f2B" id="OIa-3Q-hH1"/>
                 <outlet property="resumeButton" destination="5eX-SN-A2E" id="pyh-bI-lfT"/>
+                <outlet property="resumeImage" destination="UrI-Kv-YMw" id="X5P-dC-1n3"/>
                 <outlet property="searchBar" destination="6BE-MJ-qXq" id="M59-Fx-4dr"/>
                 <outlet property="searchButton" destination="lLd-ho-Uys" id="l1N-rA-svz"/>
+                <outlet property="searchImage" destination="Y3W-qt-74l" id="Eh0-Qc-07Z"/>
                 <outlet property="view" destination="1" id="lUi-4y-zFm"/>
             </connections>
         </placeholder>
@@ -94,10 +102,12 @@
                         <action selector="searchButtonClicked:" destination="-1" eventType="touchUpInside" id="eGC-HR-I4I"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aRn-Nq-g3o" customClass="DBTileButton">
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aRn-Nq-g3o" customClass="DBTileButton">
                     <rect key="frame" x="0.0" y="105" width="320" height="187"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.30980393290519714" blue="0.29019609093666077" alpha="1" colorSpace="deviceRGB"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                     <state key="normal">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,10 +116,52 @@
                         <action selector="closeKeboard:" destination="-1" eventType="touchUpInside" id="MpJ-gI-m6I"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="change.png" id="nMC-j8-PDb">
+                    <rect key="frame" x="30" y="140" width="80" height="110"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="job.png" id="Q9d-YC-AXY">
+                    <rect key="frame" x="130" y="237" width="154" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message.png" id="24d-O7-tW5">
+                    <rect key="frame" x="20" y="319" width="120" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resume.png" id="UrI-Kv-YMw">
+                    <rect key="frame" x="178" y="319" width="120" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="evaluating.png" id="I3F-JP-c2R">
+                    <rect key="frame" x="20" y="430" width="120" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommend.png" id="040-aQ-f2B">
+                    <rect key="frame" x="20" y="502" width="120" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.png" id="VOV-3x-vUR">
+                    <rect key="frame" x="208" y="439" width="60" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search.png" id="Y3W-qt-74l">
+                    <rect key="frame" x="275" y="71" width="23" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="change.png" width="160" height="227"/>
+        <image name="circle.png" width="109" height="216"/>
+        <image name="evaluating.png" width="245" height="82"/>
+        <image name="job.png" width="309" height="32"/>
+        <image name="message.png" width="227" height="158"/>
+        <image name="recommend.png" width="243" height="87"/>
+        <image name="resume.png" width="227" height="159"/>
+        <image name="search.png" width="46" height="46"/>
+    </resources>
 </document>
