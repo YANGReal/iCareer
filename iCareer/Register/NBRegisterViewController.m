@@ -8,21 +8,28 @@
 
 #import "NBRegisterViewController.h"
 
-@interface NBRegisterViewController ()
-{
-    UIView *aView;
-}
-@property (nonatomic, weak) IBOutlet UITextField *accountField;
-@property (nonatomic, weak) IBOutlet UITextField *verificationField;
-@property (nonatomic, weak) IBOutlet UITextField *passwordField;
+@interface NBRegisterViewController ()<UITextFieldDelegate>
+
+//手机注册
 @property (nonatomic, weak) IBOutlet UIButton *phoneButton;
 @property (nonatomic, weak) IBOutlet UIButton *mailButton;
-@property (nonatomic, weak) IBOutlet UIButton *verificationButton;
-@property (nonatomic, weak) IBOutlet UIButton *registerButton;
+@property (nonatomic, weak) IBOutlet UITextField *phoneCodeField;
+@property (nonatomic, weak) IBOutlet UITextField *phoneVerificationField;
+@property (nonatomic, weak) IBOutlet UITextField *phonePWDField;
+@property (nonatomic, weak) IBOutlet UIButton *phoneVerificationButton;
+@property (nonatomic, weak) IBOutlet UIButton *phoneRegisterButton;
+//邮箱注册
+@property (nonatomic, weak) IBOutlet UITextField *mailCodeField;
+@property (nonatomic, weak) IBOutlet UITextField *mailVerificationField;
+@property (nonatomic, weak) IBOutlet UITextField *mailPWDField;
+@property (nonatomic, weak) IBOutlet UIButton *mailVerificationButton;
+@property (nonatomic, weak) IBOutlet UIButton *mailRegisterButton;
 @property (nonatomic, weak) IBOutlet UIView *mailView;
 
 - (IBAction)mailButtonClicked:(id)sender;
 - (IBAction)phoneButtonClicked:(id)sender;
+- (IBAction)phoneRegisterClicked:(id)sender;
+- (IBAction)mailRegisterClicked:(id)sender;
 
 @end
 
@@ -52,6 +59,27 @@
     UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClicked)];
     [self.mailView addGestureRecognizer:tapGR];
     [self.view addGestureRecognizer:tapGR];
+    
+    [self setupView];
+    
+    [self.phoneCodeField addTarget:self action:@selector(EventEditingChanged:) forControlEvents:UIControlEventEditingChanged];
+    [self.phoneVerificationField addTarget:self action:@selector(EventEditingChanged:) forControlEvents:UIControlEventEditingChanged];
+    [self.mailVerificationField addTarget:self action:@selector(EventEditingChanged:) forControlEvents:UIControlEventEditingChanged];
+}
+
+ - (void)setupView
+{
+    [self.phoneCodeField setupBorder:[UIColor colorWithHexString:@"#b1bad3"] cornerRadius:3];
+    [self.phoneVerificationField setupBorder:[UIColor colorWithHexString:@"#b1bad3"] cornerRadius:3];
+    [self.phonePWDField setupBorder:[UIColor colorWithHexString:@"#b1bad3"] cornerRadius:3];
+    [self.mailCodeField setupBorder:[UIColor colorWithHexString:@"#b1bad3"] cornerRadius:3];
+    [self.mailVerificationField setupBorder:[UIColor colorWithHexString:@"#b1bad3"] cornerRadius:3];
+    [self.mailPWDField setupBorder:[UIColor colorWithHexString:@"#b1bad3"] cornerRadius:3];
+    
+    [self.phoneRegisterButton.layer setCornerRadius:3];
+    [self.phoneVerificationButton setupBorder:[UIColor colorWithHexString:@"#b1bad3"] cornerRadius:3];
+    [self.mailRegisterButton.layer setCornerRadius:3];
+    [self.mailVerificationButton setupBorder:[UIColor colorWithHexString:@"#b1bad3"] cornerRadius:3];
 }
 
 #pragma mark *****ButtonClicked*****
@@ -71,7 +99,53 @@
     [self.mailView setHidden:NO];
 }
 
+- (IBAction)phoneRegisterClicked:(id)sender
+{
+    DLog(@"phoneRegister");
+}
+
+- (IBAction)mailRegisterClicked:(id)sender
+{
+    DLog(@"mailRegister");
+}
 #pragma mark *****UITextFieldDelegate*****
+
+- (void)phoneNumberCount
+{
+    if (_phoneCodeField.text.length > 11) {
+//        NSString *phoneNumber =
+        self.phoneCodeField.text = _phoneCodeField.text;
+    }
+    DLog(@"text= %@", _phoneCodeField.text);
+}
+
+- (void)EventEditingChanged:(UITextField *)sender
+{
+    UITextRange *markRange = sender.markedTextRange;
+    NSInteger pos = [sender offsetFromPosition:markRange.start
+                              toPosition:markRange.end];
+    NSInteger nLength = sender.text.length;
+    
+//    switch (nLength) {
+//        case 3:
+//            sender.text = [sender.text stringByAppendingString:@"-"];
+//            break;
+//        case 8:
+//            sender.text = [sender.text stringByAppendingString:@"-"];
+//            break;
+//    }
+    if (sender.tag == 1001) {
+        if (nLength > 11 && pos == 0) {
+        sender.text = [sender.text substringToIndex:11];
+    }
+    }
+    else
+    {
+        if (nLength > 4 && pos == 0) {
+            sender.text = [sender.text substringToIndex:4];
+        }
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {

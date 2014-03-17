@@ -7,14 +7,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NBRegisterViewController">
             <connections>
-                <outlet property="accountField" destination="hge-7G-ehy" id="v1t-ZK-61Q"/>
-                <outlet property="mailButton" destination="JRj-Vo-CMV" id="yC5-i4-hHQ"/>
+                <outlet property="mailButton" destination="qBv-f1-uSX" id="hEJ-oK-GW7"/>
+                <outlet property="mailCodeField" destination="hge-7G-ehy" id="dXA-at-XuV"/>
+                <outlet property="mailPWDField" destination="l1B-9c-15H" id="R7r-ui-WPi"/>
+                <outlet property="mailRegisterButton" destination="p7a-0P-VTt" id="PLe-fs-ceh"/>
+                <outlet property="mailVerificationButton" destination="uXM-4U-2TE" id="CJg-Ik-6bd"/>
+                <outlet property="mailVerificationField" destination="yS2-XZ-lXD" id="8Wq-gn-VbO"/>
                 <outlet property="mailView" destination="3k6-Fb-2Nk" id="ZMo-Zi-Olw"/>
-                <outlet property="passwordField" destination="Ebj-DS-qjB" id="USI-4b-9g7"/>
-                <outlet property="phoneButton" destination="fp1-5D-bsK" id="qQD-Od-81r"/>
-                <outlet property="registerButton" destination="eLW-Nq-9I6" id="vee-8r-yG3"/>
-                <outlet property="verificationButton" destination="bow-2B-C3S" id="AjB-09-glp"/>
-                <outlet property="verificationField" destination="CUy-Pe-4Wb" id="3ub-te-9Wf"/>
+                <outlet property="phoneButton" destination="fp1-5D-bsK" id="bSP-3F-eau"/>
+                <outlet property="phoneCodeField" destination="eGl-B1-cYT" id="K3V-a0-9aV"/>
+                <outlet property="phonePWDField" destination="Ebj-DS-qjB" id="kD1-q5-odo"/>
+                <outlet property="phoneRegisterButton" destination="eLW-Nq-9I6" id="dhx-RH-6NY"/>
+                <outlet property="phoneVerificationButton" destination="bow-2B-C3S" id="wQv-9t-rg7"/>
+                <outlet property="phoneVerificationField" destination="CUy-Pe-4Wb" id="ZC9-1l-0pJ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="9Ir-M3-p9e"/>
             </connections>
         </placeholder>
@@ -41,7 +46,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="mailButtonClicked:" destination="-1" eventType="touchUpInside" id="XUg-cB-mGD"/>
+                        <action selector="mailButtonClicked:" destination="-1" eventType="touchUpInside" id="JGK-xF-mt9"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bow-2B-C3S">
@@ -61,24 +66,30 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="phoneRegisterClicked:" destination="-1" eventType="touchUpInside" id="QbN-Jg-WcH"/>
+                    </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="手机号码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGl-B1-cYT">
+                <textField opaque="NO" clipsSubviews="YES" tag="1001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="手机号码" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eGl-B1-cYT">
                     <rect key="frame" x="30" y="144" width="180" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="LZz-eD-OKk"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="输入验证码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CUy-Pe-4Wb">
                     <rect key="frame" x="30" y="245" width="260" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="输入密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebj-DS-qjB">
                     <rect key="frame" x="30" y="315" width="260" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
                 </textField>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请将发至的验证码在120秒内输入" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CF-fl-kmO">
                     <rect key="frame" x="30" y="209" width="250" height="21"/>
@@ -88,7 +99,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.96862751245498657" green="0.96862751245498657" blue="0.98823535442352295" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" red="0.93333339691162109" green="0.93333339691162109" blue="0.97254908084869385" alpha="1" colorSpace="deviceRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
@@ -100,7 +111,7 @@
                     <rect key="frame" x="30" y="144" width="260" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp1-5D-bsK">
                     <rect key="frame" x="0.0" y="64" width="160" height="50"/>
@@ -111,7 +122,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="phoneButtonClicked:" destination="-1" eventType="touchUpInside" id="Q7b-F4-Edv"/>
+                        <action selector="phoneButtonClicked:" destination="-1" eventType="touchUpInside" id="hj6-ex-WFY"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7a-0P-VTt">
@@ -122,18 +133,21 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="mailRegisterClicked:" destination="-1" eventType="touchUpInside" id="bgh-Tk-YBQ"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="输入密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l1B-9c-15H">
                     <rect key="frame" x="30" y="214" width="260" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="输入右侧验证码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yS2-XZ-lXD">
                     <rect key="frame" x="30" y="315" width="130" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXM-4U-2TE">
                     <rect key="frame" x="190" y="315" width="100" height="50"/>
