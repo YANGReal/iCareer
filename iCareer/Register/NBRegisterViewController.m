@@ -53,6 +53,7 @@
     [titleLabel setText:@"注册账号"];
     [titleLabel setFont:[UIFont boldSystemFontOfSize:22]];
     [self.navigationItem setTitleView:titleLabel];
+    
     [self.view addSubview:_mailView];
     [self.mailView setHidden:YES];
     
@@ -88,6 +89,11 @@
 {
     [self.view endEditing:YES];
     [self.mailView endEditing:YES];
+    if (self.view.frame.origin.y < 0) {
+        [UIView animateWithDuration:0.2 animations:^{
+            self.view.y = 0;
+        }];
+    }
 }
 - (IBAction)phoneButtonClicked:(id)sender
 {
@@ -102,21 +108,31 @@
 - (IBAction)phoneRegisterClicked:(id)sender
 {
     DLog(@"phoneRegister");
+    [self viewClicked];
 }
 
 - (IBAction)mailRegisterClicked:(id)sender
 {
     DLog(@"mailRegister");
+    [self viewClicked];
 }
+
 #pragma mark *****UITextFieldDelegate*****
 
-- (void)phoneNumberCount
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    if (_phoneCodeField.text.length > 11) {
-//        NSString *phoneNumber =
-        self.phoneCodeField.text = _phoneCodeField.text;
+    if (textField != _phoneCodeField && textField != _mailCodeField && self.view.frame.origin.y > -1) {
+        [UIView animateWithDuration:0.2 animations:^{
+                self.view.y = self.view.y - 100;
+        }];
     }
-    DLog(@"text= %@", _phoneCodeField.text);
+    if ((textField == _phoneCodeField || textField == _mailCodeField) && self.view.frame.origin.y < 0)
+    {
+        [UIView animateWithDuration:0.2 animations:^{
+            self.view.y = 0;
+        }];
+    }
+    return YES;
 }
 
 - (void)EventEditingChanged:(UITextField *)sender
