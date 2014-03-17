@@ -98,7 +98,11 @@
 
 - (IBAction)forgetBtnClicked:(id)sender
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"请选择一种重置密码的方式" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:Nil otherButtonTitles:@"使用手机号码重置密码",@"使用E-mail重置密码", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"请选择一种重置密码的方式"
+                                                             delegate:self
+                                                    cancelButtonTitle:@"取消"
+                                               destructiveButtonTitle:nil
+                                                    otherButtonTitles:@"使用手机号码重置密码",@"使用E-mail重置密码", nil];
     [actionSheet showInView:self.view];
 }
 
