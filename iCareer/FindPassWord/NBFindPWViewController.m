@@ -47,7 +47,8 @@
 
 - (void)setupViews
 {
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
     if (self.findType == emailType)
     {
@@ -114,6 +115,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)test:(id)sender {
-}
+
 @end
