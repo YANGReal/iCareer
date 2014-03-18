@@ -74,6 +74,7 @@
 		14F59E7318CF0F4E004CD0BB /* textField2.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F59E7018CF0F4E004CD0BB /* textField2.png */; };
 		A11BD12E18D0057B0067F09B /* NBRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11BD12C18D0057B0067F09B /* NBRegisterViewController.m */; };
 		A11BD12F18D0057B0067F09B /* NBRegisterViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11BD12D18D0057B0067F09B /* NBRegisterViewController_iPhone4.xib */; };
+		A13DB29C18D82EA4007270A0 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = A13DB29B18D82EA4007270A0 /* search.png */; };
 		A186EE7E18D066150095B657 /* NZAlertView-Icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A186EE7718D066150095B657 /* NZAlertView-Icons.bundle */; };
 		A186EE7F18D066150095B657 /* NZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A186EE7918D066150095B657 /* NZAlertView.m */; };
 		A186EE8018D066150095B657 /* NZAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A186EE7D18D066150095B657 /* NZAlertView.xib */; };
@@ -113,7 +114,6 @@
 		A18B68AB18D2AB3200352964 /* 34.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B687F18D2AB3200352964 /* 34.png */; };
 		A18B68AC18D2AB3200352964 /* 35.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B688018D2AB3200352964 /* 35.png */; };
 		A18B68AD18D2AB3200352964 /* 36.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B688118D2AB3200352964 /* 36.png */; };
-		A18B68AE18D2AB3200352964 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B688218D2AB3200352964 /* search.png */; };
 		A18B68AF18D2AB3200352964 /* change.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B688318D2AB3200352964 /* change.png */; };
 		A18B68B018D2AB3200352964 /* job.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B688418D2AB3200352964 /* job.png */; };
 		A18B68B118D2AB3200352964 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B688518D2AB3200352964 /* 4.png */; };
@@ -267,6 +267,7 @@
 		A11BD12B18D0057B0067F09B /* NBRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBRegisterViewController.h; path = Register/NBRegisterViewController.h; sourceTree = "<group>"; };
 		A11BD12C18D0057B0067F09B /* NBRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBRegisterViewController.m; path = Register/NBRegisterViewController.m; sourceTree = "<group>"; };
 		A11BD12D18D0057B0067F09B /* NBRegisterViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NBRegisterViewController_iPhone4.xib; path = Register/NBRegisterViewController_iPhone4.xib; sourceTree = "<group>"; };
+		A13DB29B18D82EA4007270A0 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		A186EE7718D066150095B657 /* NZAlertView-Icons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "NZAlertView-Icons.bundle"; sourceTree = "<group>"; };
 		A186EE7818D066150095B657 /* NZAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertView.h; sourceTree = "<group>"; };
 		A186EE7918D066150095B657 /* NZAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAlertView.m; sourceTree = "<group>"; };
@@ -313,7 +314,6 @@
 		A18B687F18D2AB3200352964 /* 34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34.png; sourceTree = "<group>"; };
 		A18B688018D2AB3200352964 /* 35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 35.png; sourceTree = "<group>"; };
 		A18B688118D2AB3200352964 /* 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 36.png; sourceTree = "<group>"; };
-		A18B688218D2AB3200352964 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		A18B688318D2AB3200352964 /* change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = change.png; sourceTree = "<group>"; };
 		A18B688418D2AB3200352964 /* job.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job.png; sourceTree = "<group>"; };
 		A18B688518D2AB3200352964 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
@@ -836,8 +836,8 @@
 		A18B68BC18D2AE6100352964 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				A13DB29B18D82EA4007270A0 /* search.png */,
 				A18B688618D2AB3200352964 /* message.png */,
-				A18B688218D2AB3200352964 /* search.png */,
 				A18B688318D2AB3200352964 /* change.png */,
 				A18B688418D2AB3200352964 /* job.png */,
 				A18B688718D2AB3200352964 /* recommend.png */,
@@ -1030,7 +1030,6 @@
 				14F59E5718CEE1BE004CD0BB /* check.png in Resources */,
 				A18B68A518D2AB3200352964 /* 29.png in Resources */,
 				14F59E4D18CEDC5C004CD0BB /* NBLoginViewController_iPhone4.xib in Resources */,
-				A18B68AE18D2AB3200352964 /* search.png in Resources */,
 				A18B68B418D2AB3200352964 /* evaluating.png in Resources */,
 				A18B68B218D2AB3200352964 /* message.png in Resources */,
 				A186EE7E18D066150095B657 /* NZAlertView-Icons.bundle in Resources */,
@@ -1051,6 +1050,7 @@
 				A18B689118D2AB3200352964 /* 10.png in Resources */,
 				A18B68B918D2AB3200352964 /* 7.png in Resources */,
 				14F59E5318CEDFC9004CD0BB /* peple.png in Resources */,
+				A13DB29C18D82EA4007270A0 /* search.png in Resources */,
 				14F59E6018CEE39B004CD0BB /* renren.png in Resources */,
 				A18B68B818D2AB3200352964 /* 6.png in Resources */,
 				A18B68BA18D2AB3200352964 /* 8.png in Resources */,
@@ -1277,8 +1277,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANG JUNTAO (X3SYKVFKUJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCareer/iCareer-Prefix.pch";
 				INFOPLIST_FILE = "iCareer/iCareer-Info.plist";

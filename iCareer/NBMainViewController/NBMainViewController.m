@@ -55,8 +55,8 @@
     }
     
     [self setupUIBarButtonItem];
-    [self setupUISearchBar];
     [self setupButton];
+    [self setupUISearchBar];
     
     [self.chanceButton addTarget:self action:@selector(closeKeboard:) forControlEvents:UIControlEventTouchUpOutside];
     
@@ -118,7 +118,8 @@
 - (void)setupUISearchBar
 {
     [self.searchBar setSearchFieldBackgroundImage:[UIImage  createImageWithColor:[UIColor clearColor] andImageHeight:20.0f] forState:UIControlStateNormal];
-    [self.searchBar setBackgroundColor:[UIColor colorWithHexString:@"#c74842" alpha:1]];
+    [self.searchBar setBackgroundColor:[UIColor whiteColor]];
+    [self.searchBar.layer setCornerRadius:5];
     [self.searchBar setImage:[UIImage  createImageWithColor:[UIColor clearColor] andImageHeight:1.0f] forSearchBarIcon:UISearchBarIconSearch state:UIControlStateNormal];
     [self.searchBar setSearchFieldBackgroundPositionAdjustment:UIOffsetMake(-10, 2)];
     [self.searchBar setPlaceholder:@"请输入职位名称,如：IT"];
@@ -127,16 +128,20 @@
     UITextField *searchField = [_searchBar valueForKey:@"_searchField"];
     searchField.textColor = [UIColor whiteColor];
     [searchField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+    
+    [self.searchBar addSubview:_searchButton];
+    [self.chanceButton addSubview:_searchBar];
+    
 }
 
 - (void)setupButton
 {
-    changeImage.x = 30;
-    changeImage.y = 30;
+    changeImage.x = 40;
+    changeImage.y = 80;
     [self.chanceButton addSubview:changeImage];
     
     jobImage.x = 120;
-    jobImage.y = 125;
+    jobImage.y = 175;
     [self.chanceButton addSubview:jobImage];
     
     messageImage.x = 15;

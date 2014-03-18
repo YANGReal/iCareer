@@ -124,7 +124,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
 
 -(void) touchUp: (UIButton *) sender {
         [UIView animateWithDuration:0.2 animations:^{
-        sender.layer.zPosition = 0;
+//        sender.layer.zPosition = 0;
         CATransform3D transform = CATransform3DMakeRotation(0, 1, 0, 0);
         transform.m34 = 1.0 / -500;
         sender.layer.transform = transform;
@@ -154,7 +154,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     
     //the 3d perspective transform
     CATransform3D transform3d;
-    sender.layer.zPosition = 0;
+//    sender.layer.zPosition = 0;
     originalCenter = sender.center;
     
     if (fabs(a) < originalSize.width / 4.0f && fabs(b) < originalSize.height / 4.0f)
@@ -162,9 +162,13 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
         [self setAnchorPoint:CGPointMake(0.5f, 0.5f) forView:sender];
 
         [UIView animateWithDuration:0.2 animations:^{
-            sender.layer.zPosition = 10000;
+//            sender.layer.zPosition = 10000;
             sender.layer.frame = CGRectMake(originalZero.x + ZoomArithmetic(originalSize.width), originalZero.y + ZoomArithmetic(originalSize.height), originalSize.width * ZoomMulriple, originalSize.height * ZoomMulriple);
-            
+            for (UIView *view in sender.subviews) {
+                if ([view isKindOfClass:[UISearchBar class]]) {
+                    view.layer.frame = CGRectMake(originalZero.x + ZoomArithmetic(originalSize.width), originalZero.y + ZoomArithmetic(originalSize.height), originalSize.width * ZoomMulriple, originalSize.height * ZoomMulriple);
+                }
+            }
             sender.center = originalCenter;
             
            // [((DBTileButton*)sender) disableShadow];
@@ -202,7 +206,7 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
         }
     }
     [UIView animateWithDuration:0.2 animations:^{
-        sender.layer.zPosition = 10000;
+//        sender.layer.zPosition = 10000;
         sender.layer.transform = transform3d;
     } completion:^(BOOL finished) {
         

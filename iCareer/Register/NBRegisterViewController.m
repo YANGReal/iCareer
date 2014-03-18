@@ -8,7 +8,7 @@
 
 #import "NBRegisterViewController.h"
 
-@interface NBRegisterViewController ()<UITextFieldDelegate>
+@interface NBRegisterViewController ()<UITextFieldDelegate, UIGestureRecognizerDelegate>
 
 //手机注册
 @property (nonatomic, weak) IBOutlet UIButton *phoneButton;
@@ -25,6 +25,8 @@
 @property (nonatomic, weak) IBOutlet UIButton *mailVerificationButton;
 @property (nonatomic, weak) IBOutlet UIButton *mailRegisterButton;
 @property (nonatomic, weak) IBOutlet UIView *mailView;
+
+@property (nonatomic, strong) UISwipeGestureRecognizer *sGR;
 
 - (IBAction)mailButtonClicked:(id)sender;
 - (IBAction)phoneButtonClicked:(id)sender;
@@ -57,15 +59,18 @@
     [self.view addSubview:_mailView];
     [self.mailView setHidden:YES];
     
-    UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClicked)];
-    [self.mailView addGestureRecognizer:tapGR];
-    [self.view addGestureRecognizer:tapGR];
+    self.sGR = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(viewClicked)];
+    [self.sGR setDirection:UISwipeGestureRecognizerDirectionDown];
+    [self.mailView addGestureRecognizer:_sGR];
+    [self.view addGestureRecognizer:_sGR];
     
     [self setupView];
     
     [self.phoneCodeField addTarget:self action:@selector(EventEditingChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.phoneVerificationField addTarget:self action:@selector(EventEditingChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.mailVerificationField addTarget:self action:@selector(EventEditingChanged:) forControlEvents:UIControlEventEditingChanged];
+    
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 
  - (void)setupView
@@ -121,9 +126,17 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    if (textField != _phoneCodeField && textField != _mailCodeField && self.view.frame.origin.y > -1) {
+//    DLog(@"y = %f", self.view.y);
+    DLog(@"state = %ld", _sGR.state);
+    if (_sGR.state == 0) {
+        DLog(@"yes");
+        return YES;
+    }
+    
+    if (textField != _phoneCodeField && textField != _mailCodeField && self.view.y > -1) {
         [UIView animateWithDuration:0.2 animations:^{
-                self.view.y = self.view.y - 100;
+            self.view.y = -80;
+//            self.view.height = self.view.height + 100;
         }];
     }
     if ((textField == _phoneCodeField || textField == _mailCodeField) && self.view.frame.origin.y < 0)
@@ -132,6 +145,7 @@
             self.view.y = 0;
         }];
     }
+//    DLog(@"y1 = %f", self.view.y);
     return YES;
 }
 
@@ -161,6 +175,20 @@
             sender.text = [sender.text substringToIndex:4];
         }
     }
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+//    DLog(@"begin!");
+//    if (self.view.frame.origin.y < -1) {
+//        self.view.y = 0;
+//        [self.view endEditing:YES];
+//        [self.mailView endEditing:YES];
+//    }
+//    [self viewClicked];
+//    self.view. y = 0;
+    
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
