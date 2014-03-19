@@ -130,7 +130,7 @@
     [searchField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
     
     [self.searchBar addSubview:_searchButton];
-    [self.chanceButton addSubview:_searchBar];
+//    [self.chanceButton addSubview:_searchBar];
     
 }
 
@@ -169,7 +169,7 @@
 
 - (IBAction)closeKeboard:(id)sender
 {
-    DLog(@"yes");
+
     [self.searchBar resignFirstResponder];
 }
 

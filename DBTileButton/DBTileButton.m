@@ -164,11 +164,6 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
         [UIView animateWithDuration:0.2 animations:^{
 //            sender.layer.zPosition = 10000;
             sender.layer.frame = CGRectMake(originalZero.x + ZoomArithmetic(originalSize.width), originalZero.y + ZoomArithmetic(originalSize.height), originalSize.width * ZoomMulriple, originalSize.height * ZoomMulriple);
-            for (UIView *view in sender.subviews) {
-                if ([view isKindOfClass:[UISearchBar class]]) {
-                    view.layer.frame = CGRectMake(originalZero.x + ZoomArithmetic(originalSize.width), originalZero.y + ZoomArithmetic(originalSize.height), originalSize.width * ZoomMulriple, originalSize.height * ZoomMulriple);
-                }
-            }
             sender.center = originalCenter;
             
            // [((DBTileButton*)sender) disableShadow];
@@ -184,13 +179,13 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     {
         if (a < 0) //left side
         {
-             transform3d = CATransform3DMakePerspective(0.0006,0 );
+             transform3d = CATransform3DMakePerspective(0.0005,0 );
         }
     
         else
         {
             //right side
-            transform3d = CATransform3DMakePerspective(-0.0006, 0);
+            transform3d = CATransform3DMakePerspective(-0.0005, 0);
         }
     }
     //y distance is greater
@@ -198,16 +193,19 @@ CATransform3DMake(CGFloat m11, CGFloat m12, CGFloat m13, CGFloat m14,
     {
         if (b < 0) //top
         {
-            transform3d = CATransform3DMakePerspective(0 , 0.0006);
+            transform3d = CATransform3DMakePerspective(0 , 0.0005);
         }
         else //bottom
         {
-            transform3d = CATransform3DMakePerspective(0 , -0.0006);
+            transform3d = CATransform3DMakePerspective(0 , -0.0005);
         }
     }
     [UIView animateWithDuration:0.2 animations:^{
 //        sender.layer.zPosition = 10000;
+        sender.layer.frame = CGRectMake(originalZero.x + ZoomArithmetic(originalSize.width), originalZero.y + ZoomArithmetic(originalSize.height), originalSize.width * ZoomMulriple, originalSize.height * ZoomMulriple);
+        sender.center = originalCenter;
         sender.layer.transform = transform3d;
+        
     } completion:^(BOOL finished) {
         
     }];
