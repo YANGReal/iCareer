@@ -66,7 +66,7 @@
     [self.view addSubview:indicator];
     [indicator startAnimating];
      */
-    [self.navigationController.view startFlip];
+//    [self.navigationController.view startFlip];
 }
 
 - (void)setupUIBarButtonItem
@@ -197,17 +197,17 @@
 - (void)rightBarButtonItemClicked
 {
    
-    NSString *url = @"http://192.168.0.144:8080/MobileChance/login";
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:@"helindong",@"username",@"helindong",@"password", nil];
-    DLog(@"params = %@",params);
-    [NBNetworkEngine loadDataWithURL:url params:params completeHander:^(id jsonObject, BOOL success) {
-        
-        NSDictionary *data  = (NSDictionary *)jsonObject;
-        NSDictionary *user = [data objectForKey:@"user"];
-        DLog(@"name = %@",[user stringAttribute:@"fullName"]);
-    }];
-    
-    return;
+//    NSString *url = @"http://192.168.0.144:8080/MobileChance/login";
+//    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:@"helindong",@"username",@0"helindong",@"password", nil];
+//    DLog(@"params = %@",params);
+//    [NBNetworkEngine loadDataWithURL:url params:params completeHander:^(id jsonObject, BOOL success) {
+//        
+//        NSDictionary *data  = (NSDictionary *)jsonObject;
+//        NSDictionary *user = [data objectForKey:@"user"];
+//        DLog(@"name = %@",[user stringAttribute:@"fullName"]);
+//    }];
+//    
+//    return;
     NBLoginViewController *loginVC = [[NBLoginViewController alloc] initWithNibName:[AppUtility getNibNameFromViewController:@"NBLoginViewController"] bundle:nil];
     [self.navigationController pushViewController:loginVC animated:YES];
 }
