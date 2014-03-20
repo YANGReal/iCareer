@@ -39,6 +39,7 @@
 #define REMEMBER_PASS_WORD @"remember_password"
 #define USER_NAME @"username"
 #define PASS_WORD @"password"
+#define UID @"uid"
 /*********************
  几何尺寸
  *********************/

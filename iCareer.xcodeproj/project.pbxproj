@@ -18,6 +18,7 @@
 		14088A4618C842200098A404 /* DBTileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14088A4518C842200098A404 /* DBTileButton.m */; };
 		14088A4918C8434B0098A404 /* AppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 14088A4818C8434B0098A404 /* AppUtility.m */; };
 		14088A4C18C844D30098A404 /* NBMainViewController_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14088A4B18C844D30098A404 /* NBMainViewController_iPhone5.xib */; };
+		140BDBDB18DAC29E009881F9 /* NBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 140BDBDA18DAC29E009881F9 /* NBUser.m */; };
 		140C82E718BF093C00BF65AB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140C82E618BF093C00BF65AB /* CoreFoundation.framework */; };
 		140C82E918BF094B00BF65AB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 140C82E818BF094B00BF65AB /* libicucore.dylib */; };
 		140C82FD18BF0B1A00BF65AB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C82ED18BF0B1A00BF65AB /* AFNetworkActivityIndicatorManager.m */; };
@@ -176,6 +177,8 @@
 		14088A4718C8434B0098A404 /* AppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppUtility.h; path = AppUtility/AppUtility.h; sourceTree = "<group>"; };
 		14088A4818C8434B0098A404 /* AppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppUtility.m; path = AppUtility/AppUtility.m; sourceTree = "<group>"; };
 		14088A4B18C844D30098A404 /* NBMainViewController_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NBMainViewController_iPhone5.xib; sourceTree = "<group>"; };
+		140BDBD918DAC29E009881F9 /* NBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBUser.h; path = Modal/User/NBUser.h; sourceTree = "<group>"; };
+		140BDBDA18DAC29E009881F9 /* NBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBUser.m; path = Modal/User/NBUser.m; sourceTree = "<group>"; };
 		140C82E618BF093C00BF65AB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		140C82E818BF094B00BF65AB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		140C82EC18BF0B1A00BF65AB /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
@@ -446,6 +449,15 @@
 				14088A4818C8434B0098A404 /* AppUtility.m */,
 			);
 			name = AppUtility;
+			sourceTree = "<group>";
+		};
+		140BDBD818DAC239009881F9 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				140BDBD918DAC29E009881F9 /* NBUser.h */,
+				140BDBDA18DAC29E009881F9 /* NBUser.m */,
+			);
+			name = Modal;
 			sourceTree = "<group>";
 		};
 		140C82EA18BF0AF600BF65AB /* ThirdPartLibrary */ = {
@@ -909,8 +921,9 @@
 		A1DFF04D18BEEAEE00C3EE6B /* iCareer */ = {
 			isa = PBXGroup;
 			children = (
-				A1DFF05618BEEAEE00C3EE6B /* NBAppDelegate.h */,
 				A1DFF05718BEEAEE00C3EE6B /* NBAppDelegate.m */,
+				A1DFF05618BEEAEE00C3EE6B /* NBAppDelegate.h */,
+				140BDBD818DAC239009881F9 /* Modal */,
 				140C837B18BF241200BF65AB /* NBBaseViewController */,
 				A186EE9018D066CA0095B657 /* 侧边栏 */,
 				140C838418BF25AB00BF65AB /* 主界面 */,
@@ -1160,6 +1173,7 @@
 				140C837718BF226E00BF65AB /* UIView+ModifyFrame.m in Sources */,
 				14073C8418D192ED001C5E86 /* Reachability.m in Sources */,
 				A186EE8B18D0664B0095B657 /* NBNavigationController.m in Sources */,
+				140BDBDB18DAC29E009881F9 /* NBUser.m in Sources */,
 				140C837618BF226E00BF65AB /* UIView+Joggle.m in Sources */,
 				140C837318BF226E00BF65AB /* UIColor+HexString.m in Sources */,
 				140C837118BF226E00BF65AB /* NSDictionary+JSON.m in Sources */,
