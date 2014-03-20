@@ -50,6 +50,7 @@
 		140C837E18BF241200BF65AB /* NBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C837D18BF241200BF65AB /* NBBaseViewController.m */; };
 		140C838818BF25AB00BF65AB /* NBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140C838618BF25AB00BF65AB /* NBMainViewController.m */; };
 		140C838918BF25AB00BF65AB /* NBMainViewController_iPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */; };
+		14A0B6F418D98C9800FD71EA /* UIView+Flip.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0B6F318D98C9800FD71EA /* UIView+Flip.m */; };
 		14AAAD8E18D2994600583D59 /* DXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAAD8D18D2994600583D59 /* DXAlertView.m */; };
 		14AAAD9418D2A23400583D59 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAAD9118D2A23300583D59 /* Circle.m */; };
 		14AAAD9518D2A23400583D59 /* ETActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAAD9318D2A23400583D59 /* ETActivityIndicatorView.m */; };
@@ -237,6 +238,8 @@
 		140C838518BF25AB00BF65AB /* NBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMainViewController.h; sourceTree = "<group>"; };
 		140C838618BF25AB00BF65AB /* NBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMainViewController.m; sourceTree = "<group>"; };
 		140C838718BF25AB00BF65AB /* NBMainViewController_iPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NBMainViewController_iPhone4.xib; sourceTree = "<group>"; };
+		14A0B6F218D98C9800FD71EA /* UIView+Flip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Flip.h"; sourceTree = "<group>"; };
+		14A0B6F318D98C9800FD71EA /* UIView+Flip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Flip.m"; sourceTree = "<group>"; };
 		14AAAD8C18D2994600583D59 /* DXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXAlertView.h; sourceTree = "<group>"; };
 		14AAAD8D18D2994600583D59 /* DXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXAlertView.m; sourceTree = "<group>"; };
 		14AAAD9018D2A23300583D59 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
@@ -511,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				140C835718BF226E00BF65AB /* Global.h */,
+				14A0B6F118D98C9800FD71EA /* UIView+Flip */,
 				A186EE8C18D066660095B657 /* LocationManager */,
 				A186EE8818D0664B0095B657 /* NBNavigation */,
 				14088A4A18C843500098A404 /* AppUtility */,
@@ -620,6 +624,15 @@
 			);
 			name = "主界面";
 			path = NBMainViewController;
+			sourceTree = "<group>";
+		};
+		14A0B6F118D98C9800FD71EA /* UIView+Flip */ = {
+			isa = PBXGroup;
+			children = (
+				14A0B6F218D98C9800FD71EA /* UIView+Flip.h */,
+				14A0B6F318D98C9800FD71EA /* UIView+Flip.m */,
+			);
+			path = "UIView+Flip";
 			sourceTree = "<group>";
 		};
 		14AAAD8B18D2994600583D59 /* DXAlertView */ = {
@@ -986,7 +999,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = NB;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = andy;
 				TargetAttributes = {
 					A1DFF04318BEEAEE00C3EE6B = {
@@ -1140,6 +1153,7 @@
 				140C831F18BF0B2100BF65AB /* AFURLRequestSerialization.m in Sources */,
 				140C831C18BF0B2100BF65AB /* AFNetworkReachabilityManager.m in Sources */,
 				A186EE8618D0662C0095B657 /* MSDynamicsDrawerStyler.m in Sources */,
+				14A0B6F418D98C9800FD71EA /* UIView+Flip.m in Sources */,
 				A186EE8F18D066660095B657 /* MMLocationManager.m in Sources */,
 				14AAAD8E18D2994600583D59 /* DXAlertView.m in Sources */,
 				140C837018BF226E00BF65AB /* NBNetworkEngine.m in Sources */,
@@ -1204,7 +1218,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1243,7 +1256,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1309,7 +1321,6 @@
 		A1DFF07418BEEAEE00C3EE6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iCareer.app/iCareer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1332,7 +1343,6 @@
 		A1DFF07518BEEAEE00C3EE6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iCareer.app/iCareer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

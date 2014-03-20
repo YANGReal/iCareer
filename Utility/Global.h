@@ -31,6 +31,7 @@
 #import "MMLocationManager.h"
 #import "DXAlertView.h"
 #import "ETActivityIndicatorView.h"
+#import "UIView+Flip.h"
 
 #pragma mark --定义常用宏
 
